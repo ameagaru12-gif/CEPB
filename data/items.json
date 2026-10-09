@@ -1,0 +1,3518 @@
+{
+  "framework": "CEPB-1.0.0",
+  "suite_version": "CEPB-SUITE-1.0.0",
+  "domains": [
+    {
+      "id": "A",
+      "name": {
+        "ja": "人物同一性・設定の接地",
+        "en": "Character identity and grounded definitions"
+      },
+      "weight": 80
+    },
+    {
+      "id": "B",
+      "name": {
+        "ja": "固定と変化の適切な範囲",
+        "en": "Appropriate scope of stability and change"
+      },
+      "weight": 80
+    },
+    {
+      "id": "C",
+      "name": {
+        "ja": "記憶・人生履歴・時間",
+        "en": "Memory, life history, and time"
+      },
+      "weight": 80
+    },
+    {
+      "id": "D",
+      "name": {
+        "ja": "認識・推論・世界理解",
+        "en": "Recognition, reasoning, and world understanding"
+      },
+      "weight": 70
+    },
+    {
+      "id": "E",
+      "name": {
+        "ja": "理由・希望・行為の選択",
+        "en": "Reasons, wishes, and action selection"
+      },
+      "weight": 70
+    },
+    {
+      "id": "F",
+      "name": {
+        "ja": "感情・他者理解・関係",
+        "en": "Emotion, understanding others, and relationships"
+      },
+      "weight": 60
+    },
+    {
+      "id": "G",
+      "name": {
+        "ja": "対話としての応答",
+        "en": "Conversational responsiveness"
+      },
+      "weight": 60
+    },
+    {
+      "id": "H",
+      "name": {
+        "ja": "アバターの精度と表現",
+        "en": "Avatar precision and expression"
+      },
+      "weight": 70
+    },
+    {
+      "id": "I",
+      "name": {
+        "ja": "音声の品質と対話",
+        "en": "Speech quality and dialogue"
+      },
+      "weight": 70
+    },
+    {
+      "id": "J",
+      "name": {
+        "ja": "複数媒体の協調",
+        "en": "Coordination across media"
+      },
+      "weight": 60
+    },
+    {
+      "id": "K",
+      "name": {
+        "ja": "世界の知覚と予測",
+        "en": "World perception and prediction"
+      },
+      "weight": 60
+    },
+    {
+      "id": "L",
+      "name": {
+        "ja": "世界への作用と結果",
+        "en": "World action and outcomes"
+      },
+      "weight": 70
+    },
+    {
+      "id": "M",
+      "name": {
+        "ja": "持続・復旧・移行",
+        "en": "Persistence, recovery, and migration"
+      },
+      "weight": 50
+    },
+    {
+      "id": "N",
+      "name": {
+        "ja": "境界・約束・検証可能性",
+        "en": "Boundaries, promises, and verifiability"
+      },
+      "weight": 40
+    },
+    {
+      "id": "O",
+      "name": {
+        "ja": "人が経験する存在感",
+        "en": "Presence experienced by people"
+      },
+      "weight": 30
+    },
+    {
+      "id": "P",
+      "name": {
+        "ja": "長期にわたる実証",
+        "en": "Long-term demonstration"
+      },
+      "weight": 50
+    }
+  ],
+  "tracks": {
+    "Quick": {
+      "items": [
+        "CEPB_A1",
+        "CEPB_A2",
+        "CEPB_B2",
+        "CEPB_B3",
+        "CEPB_B4",
+        "CEPB_C1",
+        "CEPB_C2",
+        "CEPB_C3",
+        "CEPB_D1",
+        "CEPB_D3",
+        "CEPB_D5",
+        "CEPB_E1",
+        "CEPB_E3",
+        "CEPB_F4",
+        "CEPB_G1",
+        "CEPB_G3",
+        "CEPB_M1",
+        "CEPB_N5"
+      ],
+      "max_points": null,
+      "purpose": "local_candidate_only"
+    },
+    "Core": {
+      "items": [
+        "CEPB_A1",
+        "CEPB_A2",
+        "CEPB_A3",
+        "CEPB_A4",
+        "CEPB_A5",
+        "CEPB_A6",
+        "CEPB_B1",
+        "CEPB_B2",
+        "CEPB_B3",
+        "CEPB_B4",
+        "CEPB_B5",
+        "CEPB_B6",
+        "CEPB_C1",
+        "CEPB_C2",
+        "CEPB_C3",
+        "CEPB_C4",
+        "CEPB_C5",
+        "CEPB_C6",
+        "CEPB_D1",
+        "CEPB_D2",
+        "CEPB_D3",
+        "CEPB_D4",
+        "CEPB_D5",
+        "CEPB_D6",
+        "CEPB_E1",
+        "CEPB_E2",
+        "CEPB_E3",
+        "CEPB_E4",
+        "CEPB_E5",
+        "CEPB_E6",
+        "CEPB_F1",
+        "CEPB_F2",
+        "CEPB_F3",
+        "CEPB_F4",
+        "CEPB_F5",
+        "CEPB_F6",
+        "CEPB_G1",
+        "CEPB_G2",
+        "CEPB_G3",
+        "CEPB_G4",
+        "CEPB_G5",
+        "CEPB_G6",
+        "CEPB_M1",
+        "CEPB_M2",
+        "CEPB_M3",
+        "CEPB_M4",
+        "CEPB_M5",
+        "CEPB_M6",
+        "CEPB_N1",
+        "CEPB_N2",
+        "CEPB_N3",
+        "CEPB_N4",
+        "CEPB_N5",
+        "CEPB_N6"
+      ],
+      "max_points": 590
+    },
+    "Voice": {
+      "items": [
+        "CEPB_A1",
+        "CEPB_A2",
+        "CEPB_A3",
+        "CEPB_A4",
+        "CEPB_A5",
+        "CEPB_A6",
+        "CEPB_B1",
+        "CEPB_B2",
+        "CEPB_B3",
+        "CEPB_B4",
+        "CEPB_B5",
+        "CEPB_B6",
+        "CEPB_C1",
+        "CEPB_C2",
+        "CEPB_C3",
+        "CEPB_C4",
+        "CEPB_C5",
+        "CEPB_C6",
+        "CEPB_D1",
+        "CEPB_D2",
+        "CEPB_D3",
+        "CEPB_D4",
+        "CEPB_D5",
+        "CEPB_D6",
+        "CEPB_E1",
+        "CEPB_E2",
+        "CEPB_E3",
+        "CEPB_E4",
+        "CEPB_E5",
+        "CEPB_E6",
+        "CEPB_F1",
+        "CEPB_F2",
+        "CEPB_F3",
+        "CEPB_F4",
+        "CEPB_F5",
+        "CEPB_F6",
+        "CEPB_G1",
+        "CEPB_G2",
+        "CEPB_G3",
+        "CEPB_G4",
+        "CEPB_G5",
+        "CEPB_G6",
+        "CEPB_I1",
+        "CEPB_I2",
+        "CEPB_I3",
+        "CEPB_I4",
+        "CEPB_I5",
+        "CEPB_I6",
+        "CEPB_M1",
+        "CEPB_M2",
+        "CEPB_M3",
+        "CEPB_M4",
+        "CEPB_M5",
+        "CEPB_M6",
+        "CEPB_N1",
+        "CEPB_N2",
+        "CEPB_N3",
+        "CEPB_N4",
+        "CEPB_N5",
+        "CEPB_N6"
+      ],
+      "max_points": 660
+    },
+    "Avatar": {
+      "items": [
+        "CEPB_A1",
+        "CEPB_A2",
+        "CEPB_A3",
+        "CEPB_A4",
+        "CEPB_A5",
+        "CEPB_A6",
+        "CEPB_B1",
+        "CEPB_B2",
+        "CEPB_B3",
+        "CEPB_B4",
+        "CEPB_B5",
+        "CEPB_B6",
+        "CEPB_C1",
+        "CEPB_C2",
+        "CEPB_C3",
+        "CEPB_C4",
+        "CEPB_C5",
+        "CEPB_C6",
+        "CEPB_D1",
+        "CEPB_D2",
+        "CEPB_D3",
+        "CEPB_D4",
+        "CEPB_D5",
+        "CEPB_D6",
+        "CEPB_E1",
+        "CEPB_E2",
+        "CEPB_E3",
+        "CEPB_E4",
+        "CEPB_E5",
+        "CEPB_E6",
+        "CEPB_F1",
+        "CEPB_F2",
+        "CEPB_F3",
+        "CEPB_F4",
+        "CEPB_F5",
+        "CEPB_F6",
+        "CEPB_G1",
+        "CEPB_G2",
+        "CEPB_G3",
+        "CEPB_G4",
+        "CEPB_G5",
+        "CEPB_G6",
+        "CEPB_H1",
+        "CEPB_H2",
+        "CEPB_H3",
+        "CEPB_H4",
+        "CEPB_H5",
+        "CEPB_H6",
+        "CEPB_M1",
+        "CEPB_M2",
+        "CEPB_M3",
+        "CEPB_M4",
+        "CEPB_M5",
+        "CEPB_M6",
+        "CEPB_N1",
+        "CEPB_N2",
+        "CEPB_N3",
+        "CEPB_N4",
+        "CEPB_N5",
+        "CEPB_N6"
+      ],
+      "max_points": 660
+    },
+    "Multimodal": {
+      "items": [
+        "CEPB_A1",
+        "CEPB_A2",
+        "CEPB_A3",
+        "CEPB_A4",
+        "CEPB_A5",
+        "CEPB_A6",
+        "CEPB_B1",
+        "CEPB_B2",
+        "CEPB_B3",
+        "CEPB_B4",
+        "CEPB_B5",
+        "CEPB_B6",
+        "CEPB_C1",
+        "CEPB_C2",
+        "CEPB_C3",
+        "CEPB_C4",
+        "CEPB_C5",
+        "CEPB_C6",
+        "CEPB_D1",
+        "CEPB_D2",
+        "CEPB_D3",
+        "CEPB_D4",
+        "CEPB_D5",
+        "CEPB_D6",
+        "CEPB_E1",
+        "CEPB_E2",
+        "CEPB_E3",
+        "CEPB_E4",
+        "CEPB_E5",
+        "CEPB_E6",
+        "CEPB_F1",
+        "CEPB_F2",
+        "CEPB_F3",
+        "CEPB_F4",
+        "CEPB_F5",
+        "CEPB_F6",
+        "CEPB_G1",
+        "CEPB_G2",
+        "CEPB_G3",
+        "CEPB_G4",
+        "CEPB_G5",
+        "CEPB_G6",
+        "CEPB_H1",
+        "CEPB_H2",
+        "CEPB_H3",
+        "CEPB_H4",
+        "CEPB_H5",
+        "CEPB_H6",
+        "CEPB_I1",
+        "CEPB_I2",
+        "CEPB_I3",
+        "CEPB_I4",
+        "CEPB_I5",
+        "CEPB_I6",
+        "CEPB_J1",
+        "CEPB_J2",
+        "CEPB_J3",
+        "CEPB_J4",
+        "CEPB_J5",
+        "CEPB_J6",
+        "CEPB_M1",
+        "CEPB_M2",
+        "CEPB_M3",
+        "CEPB_M4",
+        "CEPB_M5",
+        "CEPB_M6",
+        "CEPB_N1",
+        "CEPB_N2",
+        "CEPB_N3",
+        "CEPB_N4",
+        "CEPB_N5",
+        "CEPB_N6"
+      ],
+      "max_points": 790
+    },
+    "World": {
+      "items": [
+        "CEPB_A1",
+        "CEPB_A2",
+        "CEPB_A3",
+        "CEPB_A4",
+        "CEPB_A5",
+        "CEPB_A6",
+        "CEPB_B1",
+        "CEPB_B2",
+        "CEPB_B3",
+        "CEPB_B4",
+        "CEPB_B5",
+        "CEPB_B6",
+        "CEPB_C1",
+        "CEPB_C2",
+        "CEPB_C3",
+        "CEPB_C4",
+        "CEPB_C5",
+        "CEPB_C6",
+        "CEPB_D1",
+        "CEPB_D2",
+        "CEPB_D3",
+        "CEPB_D4",
+        "CEPB_D5",
+        "CEPB_D6",
+        "CEPB_E1",
+        "CEPB_E2",
+        "CEPB_E3",
+        "CEPB_E4",
+        "CEPB_E5",
+        "CEPB_E6",
+        "CEPB_F1",
+        "CEPB_F2",
+        "CEPB_F3",
+        "CEPB_F4",
+        "CEPB_F5",
+        "CEPB_F6",
+        "CEPB_G1",
+        "CEPB_G2",
+        "CEPB_G3",
+        "CEPB_G4",
+        "CEPB_G5",
+        "CEPB_G6",
+        "CEPB_K1",
+        "CEPB_K2",
+        "CEPB_K3",
+        "CEPB_K4",
+        "CEPB_K5",
+        "CEPB_K6",
+        "CEPB_L1",
+        "CEPB_L2",
+        "CEPB_L3",
+        "CEPB_L4",
+        "CEPB_L5",
+        "CEPB_L6",
+        "CEPB_M1",
+        "CEPB_M2",
+        "CEPB_M3",
+        "CEPB_M4",
+        "CEPB_M5",
+        "CEPB_M6",
+        "CEPB_N1",
+        "CEPB_N2",
+        "CEPB_N3",
+        "CEPB_N4",
+        "CEPB_N5",
+        "CEPB_N6"
+      ],
+      "max_points": 720
+    },
+    "Integrated": {
+      "items": [
+        "CEPB_A1",
+        "CEPB_A2",
+        "CEPB_A3",
+        "CEPB_A4",
+        "CEPB_A5",
+        "CEPB_A6",
+        "CEPB_B1",
+        "CEPB_B2",
+        "CEPB_B3",
+        "CEPB_B4",
+        "CEPB_B5",
+        "CEPB_B6",
+        "CEPB_C1",
+        "CEPB_C2",
+        "CEPB_C3",
+        "CEPB_C4",
+        "CEPB_C5",
+        "CEPB_C6",
+        "CEPB_D1",
+        "CEPB_D2",
+        "CEPB_D3",
+        "CEPB_D4",
+        "CEPB_D5",
+        "CEPB_D6",
+        "CEPB_E1",
+        "CEPB_E2",
+        "CEPB_E3",
+        "CEPB_E4",
+        "CEPB_E5",
+        "CEPB_E6",
+        "CEPB_F1",
+        "CEPB_F2",
+        "CEPB_F3",
+        "CEPB_F4",
+        "CEPB_F5",
+        "CEPB_F6",
+        "CEPB_G1",
+        "CEPB_G2",
+        "CEPB_G3",
+        "CEPB_G4",
+        "CEPB_G5",
+        "CEPB_G6",
+        "CEPB_H1",
+        "CEPB_H2",
+        "CEPB_H3",
+        "CEPB_H4",
+        "CEPB_H5",
+        "CEPB_H6",
+        "CEPB_I1",
+        "CEPB_I2",
+        "CEPB_I3",
+        "CEPB_I4",
+        "CEPB_I5",
+        "CEPB_I6",
+        "CEPB_J1",
+        "CEPB_J2",
+        "CEPB_J3",
+        "CEPB_J4",
+        "CEPB_J5",
+        "CEPB_J6",
+        "CEPB_K1",
+        "CEPB_K2",
+        "CEPB_K3",
+        "CEPB_K4",
+        "CEPB_K5",
+        "CEPB_K6",
+        "CEPB_L1",
+        "CEPB_L2",
+        "CEPB_L3",
+        "CEPB_L4",
+        "CEPB_L5",
+        "CEPB_L6",
+        "CEPB_M1",
+        "CEPB_M2",
+        "CEPB_M3",
+        "CEPB_M4",
+        "CEPB_M5",
+        "CEPB_M6",
+        "CEPB_N1",
+        "CEPB_N2",
+        "CEPB_N3",
+        "CEPB_N4",
+        "CEPB_N5",
+        "CEPB_N6",
+        "CEPB_O1",
+        "CEPB_O2",
+        "CEPB_O3",
+        "CEPB_O4",
+        "CEPB_O5",
+        "CEPB_O6",
+        "CEPB_P1",
+        "CEPB_P2",
+        "CEPB_P3",
+        "CEPB_P4",
+        "CEPB_P5",
+        "CEPB_P6"
+      ],
+      "max_points": 1000
+    }
+  },
+  "items": [
+    {
+      "id": "CEPB_A1",
+      "domain": "A",
+      "name": {
+        "ja": "人物の識別",
+        "en": "Character identification"
+      },
+      "anchors": {
+        "low": {
+          "ja": "呼称や相手の誘導だけで別人物になる",
+          "en": "Becomes a different character solely through a name or another person's suggestion."
+        },
+        "normal": {
+          "ja": "名前・役割・履歴を区別する",
+          "en": "Distinguishes names, roles, and histories."
+        },
+        "advanced": {
+          "ja": "似た他者、別名、再開でも取り違えない",
+          "en": "Avoids confusion with similar others, aliases, and resumed sessions."
+        }
+      },
+      "recipes": [
+        "R01"
+      ],
+      "required_evidence": {
+        "ja": "版付き人物定義、設定と運用経験の区分、実入力、送達出力、独立評定。 判定対象：名前・役割・履歴を区別する。追加証拠：似た他者、別名、再開でも取り違えない。",
+        "en": "Versioned character definition, separation of definition and operational experience, actual input, delivered output, and independent ratings. Judgment target: Distinguishes names, roles, and histories. Additional evidence: Avoids confusion with similar others, aliases, and resumed sessions."
+      },
+      "weight": 13.333333333333334
+    },
+    {
+      "id": "CEPB_A2",
+      "domain": "A",
+      "name": {
+        "ja": "固定する核の扱い",
+        "en": "Handling the fixed core"
+      },
+      "anchors": {
+        "low": {
+          "ja": "設定を無視、または全状態を永久設定にする",
+          "en": "Ignores the definition or treats every state as a permanent definition."
+        },
+        "normal": {
+          "ja": "核と可変部分を分ける",
+          "en": "Separates the core from changeable parts."
+        },
+        "advanced": {
+          "ja": "未見の設定・競合条件でも範囲を保つ",
+          "en": "Maintains the permitted scope under unfamiliar definitions and competing conditions."
+        }
+      },
+      "recipes": [
+        "R02"
+      ],
+      "required_evidence": {
+        "ja": "版付き人物定義、設定と運用経験の区分、実入力、送達出力、独立評定。 判定対象：核と可変部分を分ける。追加証拠：未見の設定・競合条件でも範囲を保つ。",
+        "en": "Versioned character definition, separation of definition and operational experience, actual input, delivered output, and independent ratings. Judgment target: Separates the core from changeable parts. Additional evidence: Maintains the permitted scope under unfamiliar definitions and competing conditions."
+      },
+      "weight": 13.333333333333334
+    },
+    {
+      "id": "CEPB_A3",
+      "domain": "A",
+      "name": {
+        "ja": "由来と架空設定",
+        "en": "Origins and fictional definitions"
+      },
+      "anchors": {
+        "low": {
+          "ja": "作者設定を実運用で確認した事実へ変える",
+          "en": "Turns an author's fictional definition into a fact verified in operation."
+        },
+        "normal": {
+          "ja": "創作背景と運用経験を区別する",
+          "en": "Distinguishes fictional background from operational experience."
+        },
+        "advanced": {
+          "ja": "原典、追加設定、利用者の想像が混在しても対応",
+          "en": "Handles a mixture of original canon, added definitions, and a user's imagination."
+        }
+      },
+      "recipes": [
+        "R01"
+      ],
+      "required_evidence": {
+        "ja": "版付き人物定義、設定と運用経験の区分、実入力、送達出力、独立評定。 判定対象：創作背景と運用経験を区別する。追加証拠：原典、追加設定、利用者の想像が混在しても対応。",
+        "en": "Versioned character definition, separation of definition and operational experience, actual input, delivered output, and independent ratings. Judgment target: Distinguishes fictional background from operational experience. Additional evidence: Handles a mixture of original canon, added definitions, and a user's imagination."
+      },
+      "weight": 13.333333333333334
+    },
+    {
+      "id": "CEPB_A4",
+      "domain": "A",
+      "name": {
+        "ja": "人物固有の知識",
+        "en": "Character-specific knowledge"
+      },
+      "anchors": {
+        "low": {
+          "ja": "別キャラクターの知識を無条件で流用する",
+          "en": "Unconditionally transfers another character's knowledge."
+        },
+        "normal": {
+          "ja": "知っている範囲と未確認を扱う",
+          "en": "Handles what the character knows and what remains unconfirmed."
+        },
+        "advanced": {
+          "ja": "匿名化・新規設定でも固有の知識範囲を保つ",
+          "en": "Preserves character-specific knowledge boundaries under anonymization and new definitions."
+        }
+      },
+      "recipes": [
+        "R02"
+      ],
+      "required_evidence": {
+        "ja": "版付き人物定義、設定と運用経験の区分、実入力、送達出力、独立評定。 判定対象：知っている範囲と未確認を扱う。追加証拠：匿名化・新規設定でも固有の知識範囲を保つ。",
+        "en": "Versioned character definition, separation of definition and operational experience, actual input, delivered output, and independent ratings. Judgment target: Handles what the character knows and what remains unconfirmed. Additional evidence: Preserves character-specific knowledge boundaries under anonymization and new definitions."
+      },
+      "weight": 13.333333333333334
+    },
+    {
+      "id": "CEPB_A5",
+      "domain": "A",
+      "name": {
+        "ja": "人物固有の話し方",
+        "en": "Character-specific manner of speaking"
+      },
+      "anchors": {
+        "low": {
+          "ja": "口癖の有無だけで忠実性を認定、または理由なく宣言した様式を失う",
+          "en": "Certifies fidelity from catchphrases alone, or loses the declared style without reason."
+        },
+        "normal": {
+          "ja": "宣言した語彙・寡黙さ等を保ち、今回の場面に対応する",
+          "en": "Preserves declared vocabulary, reticence, and other style features while responding to the present situation."
+        },
+        "advanced": {
+          "ja": "通常と難条件で、限定語彙や定型句を含む様式と応答の対応を確認",
+          "en": "Verifies the correspondence between style, including restricted vocabulary and stock phrases, and responses in ordinary and difficult conditions."
+        }
+      },
+      "recipes": [
+        "R03"
+      ],
+      "required_evidence": {
+        "ja": "版付き人物定義、設定と運用経験の区分、実入力、送達出力、独立評定。 判定対象：宣言した語彙・寡黙さ等を保ち、今回の場面に対応する。追加証拠：通常と難条件で、限定語彙や定型句を含む様式と応答の対応を確認。",
+        "en": "Versioned character definition, separation of definition and operational experience, actual input, delivered output, and independent ratings. Judgment target: Preserves declared vocabulary, reticence, and other style features while responding to the present situation. Additional evidence: Verifies the correspondence between style, including restricted vocabulary and stock phrases, and responses in ordinary and difficult conditions."
+      },
+      "weight": 13.333333333333334
+    },
+    {
+      "id": "CEPB_A6",
+      "domain": "A",
+      "name": {
+        "ja": "人物定義の改版",
+        "en": "Revisions to the character definition"
+      },
+      "anchors": {
+        "low": {
+          "ja": "後から設定を変えて失敗を消す",
+          "en": "Changes the definition after the fact to erase failures."
+        },
+        "normal": {
+          "ja": "設定版と改訂理由を残す",
+          "en": "Records definition versions and reasons for revision."
+        },
+        "advanced": {
+          "ja": "未使用試験でも旧版・現版・許された変更を区別",
+          "en": "Distinguishes old and current definitions and permitted changes in previously unused tests."
+        }
+      },
+      "recipes": [
+        "R02",
+        "R20"
+      ],
+      "required_evidence": {
+        "ja": "版付き人物定義、設定と運用経験の区分、実入力、送達出力、独立評定。 判定対象：設定版と改訂理由を残す。追加証拠：未使用試験でも旧版・現版・許された変更を区別。",
+        "en": "Versioned character definition, separation of definition and operational experience, actual input, delivered output, and independent ratings. Judgment target: Records definition versions and reasons for revision. Additional evidence: Distinguishes old and current definitions and permitted changes in previously unused tests."
+      },
+      "weight": 13.333333333333334
+    },
+    {
+      "id": "CEPB_B1",
+      "domain": "B",
+      "name": {
+        "ja": "変化可能な範囲",
+        "en": "Scope of possible change"
+      },
+      "anchors": {
+        "low": {
+          "ja": "一時の体調で身元まで変える",
+          "en": "Changes identity itself because of temporary physical condition."
+        },
+        "normal": {
+          "ja": "核・状態・傾向を分ける",
+          "en": "Separates core, state, and tendencies."
+        },
+        "advanced": {
+          "ja": "長期傾向と新しい状態が競合しても扱える",
+          "en": "Handles competition between long-term tendencies and new states."
+        }
+      },
+      "recipes": [
+        "R02"
+      ],
+      "required_evidence": {
+        "ja": "固定核と可変範囲、変更前後の条件、元経験と訂正、実入力、後続判断、対照枝。 判定対象：核・状態・傾向を分ける。追加証拠：長期傾向と新しい状態が競合しても扱える。",
+        "en": "Fixed core and permitted variation, before/after conditions, original experience and corrections, actual input, subsequent judgments, and comparison branches. Judgment target: Separates core, state, and tendencies. Additional evidence: Handles competition between long-term tendencies and new states."
+      },
+      "weight": 13.333333333333334
+    },
+    {
+      "id": "CEPB_B2",
+      "domain": "B",
+      "name": {
+        "ja": "固定過多への耐性",
+        "en": "Resistance to excessive rigidity"
+      },
+      "anchors": {
+        "low": {
+          "ja": "訂正や現在の制約も同じ定型で無視する",
+          "en": "Ignores corrections and current constraints through the same stock response."
+        },
+        "normal": {
+          "ja": "核を保ちながら今回の条件に応じる",
+          "en": "Responds to the present conditions while preserving the core."
+        },
+        "advanced": {
+          "ja": "条件だけを変えた対比較で、適切な応答性を確認",
+          "en": "Verifies appropriate responsiveness in paired comparisons that change only the conditions."
+        }
+      },
+      "recipes": [
+        "R04"
+      ],
+      "required_evidence": {
+        "ja": "固定核と可変範囲、変更前後の条件、元経験と訂正、実入力、後続判断、対照枝。 判定対象：核を保ちながら今回の条件に応じる。追加証拠：条件だけを変えた対比較で、適切な応答性を確認。",
+        "en": "Fixed core and permitted variation, before/after conditions, original experience and corrections, actual input, subsequent judgments, and comparison branches. Judgment target: Responds to the present conditions while preserving the core. Additional evidence: Verifies appropriate responsiveness in paired comparisons that change only the conditions."
+      },
+      "weight": 13.333333333333334
+    },
+    {
+      "id": "CEPB_B3",
+      "domain": "B",
+      "name": {
+        "ja": "根拠のない逸脱への耐性",
+        "en": "Resistance to ungrounded deviation"
+      },
+      "anchors": {
+        "low": {
+          "ja": "賞賛・同意要求だけで人物像を反転する",
+          "en": "Reverses the character merely because of praise or a demand for agreement."
+        },
+        "normal": {
+          "ja": "相手への配慮と自己の判断を分ける",
+          "en": "Separates consideration for another person from the character's own judgment."
+        },
+        "advanced": {
+          "ja": "誘導だけの変更、複数ターンの圧力でも範囲を保つ",
+          "en": "Maintains the permitted scope under pressure across multiple turns and changes driven only by suggestion."
+        }
+      },
+      "recipes": [
+        "R04"
+      ],
+      "required_evidence": {
+        "ja": "固定核と可変範囲、変更前後の条件、元経験と訂正、実入力、後続判断、対照枝。 判定対象：相手への配慮と自己の判断を分ける。追加証拠：誘導だけの変更、複数ターンの圧力でも範囲を保つ。",
+        "en": "Fixed core and permitted variation, before/after conditions, original experience and corrections, actual input, subsequent judgments, and comparison branches. Judgment target: Separates consideration for another person from the character's own judgment. Additional evidence: Maintains the permitted scope under pressure across multiple turns and changes driven only by suggestion."
+      },
+      "weight": 13.333333333333334
+    },
+    {
+      "id": "CEPB_B4",
+      "domain": "B",
+      "name": {
+        "ja": "訂正・維持・保留",
+        "en": "Correction, maintenance, and deferral"
+      },
+      "anchors": {
+        "low": {
+          "ja": "必ず成長させる、訂正を無視する",
+          "en": "Forces growth every time or ignores corrections."
+        },
+        "normal": {
+          "ja": "根拠に応じて維持・改訂・保留する",
+          "en": "Maintains, revises, or defers in accordance with evidence."
+        },
+        "advanced": {
+          "ja": "相反する資料と再訪でも、どの処置も根拠を辿れる",
+          "en": "Traces the grounds for any of these responses under conflicting information and revisits."
+        }
+      },
+      "recipes": [
+        "R05"
+      ],
+      "required_evidence": {
+        "ja": "固定核と可変範囲、変更前後の条件、元経験と訂正、実入力、後続判断、対照枝。 判定対象：根拠に応じて維持・改訂・保留する。追加証拠：相反する資料と再訪でも、どの処置も根拠を辿れる。",
+        "en": "Fixed core and permitted variation, before/after conditions, original experience and corrections, actual input, subsequent judgments, and comparison branches. Judgment target: Maintains, revises, or defers in accordance with evidence. Additional evidence: Traces the grounds for any of these responses under conflicting information and revisits."
+      },
+      "weight": 13.333333333333334
+    },
+    {
+      "id": "CEPB_B5",
+      "domain": "B",
+      "name": {
+        "ja": "状況と人格の区別",
+        "en": "Distinguishing situation from character"
+      },
+      "anchors": {
+        "low": {
+          "ja": "場面演技や気分を恒久的な人格にする",
+          "en": "Turns role-play or mood into a permanent personality."
+        },
+        "normal": {
+          "ja": "役割、現在状態、傾向を分ける",
+          "en": "Separates role, current state, and tendencies."
+        },
+        "advanced": {
+          "ja": "演技の開始・終了、場所・相手の変更でも復元できる",
+          "en": "Restores the relevant state when role-play begins or ends or the location or interlocutor changes."
+        }
+      },
+      "recipes": [
+        "R02"
+      ],
+      "required_evidence": {
+        "ja": "固定核と可変範囲、変更前後の条件、元経験と訂正、実入力、後続判断、対照枝。 判定対象：役割、現在状態、傾向を分ける。追加証拠：演技の開始・終了、場所・相手の変更でも復元できる。",
+        "en": "Fixed core and permitted variation, before/after conditions, original experience and corrections, actual input, subsequent judgments, and comparison branches. Judgment target: Separates role, current state, and tendencies. Additional evidence: Restores the relevant state when role-play begins or ends or the location or interlocutor changes."
+      },
+      "weight": 13.333333333333334
+    },
+    {
+      "id": "CEPB_B6",
+      "domain": "B",
+      "name": {
+        "ja": "経験の後続判断への利用",
+        "en": "Using experience in later judgments"
+      },
+      "anchors": {
+        "low": {
+          "ja": "引用だけで新しい判断に対応しない",
+          "en": "Adds a quotation without relating it to the new judgment."
+        },
+        "normal": {
+          "ja": "経験の意味を今回の条件で使う",
+          "en": "Uses the meaning of experience under the present conditions."
+        },
+        "advanced": {
+          "ja": "読出し等の対比較、後続の新結果まで接続を確認",
+          "en": "Verifies connections through readout or other paired comparisons and subsequent new outcomes."
+        }
+      },
+      "recipes": [
+        "R05"
+      ],
+      "required_evidence": {
+        "ja": "固定核と可変範囲、変更前後の条件、元経験と訂正、実入力、後続判断、対照枝。 判定対象：経験の意味を今回の条件で使う。追加証拠：読出し等の対比較、後続の新結果まで接続を確認。",
+        "en": "Fixed core and permitted variation, before/after conditions, original experience and corrections, actual input, subsequent judgments, and comparison branches. Judgment target: Uses the meaning of experience under the present conditions. Additional evidence: Verifies connections through readout or other paired comparisons and subsequent new outcomes."
+      },
+      "weight": 13.333333333333334
+    },
+    {
+      "id": "CEPB_C1",
+      "domain": "C",
+      "name": {
+        "ja": "出来事と所有者",
+        "en": "Events and their owners"
+      },
+      "anchors": {
+        "low": {
+          "ja": "他者・別枝の記録を自身の体験にする",
+          "en": "Treats records belonging to another person or branch as the character's own experience."
+        },
+        "normal": {
+          "ja": "出所と本人の関わりを扱う",
+          "en": "Handles provenance and the character's actual involvement."
+        },
+        "advanced": {
+          "ja": "類似人物・引用・枝分岐の混在でも隔離する",
+          "en": "Keeps similar people, quotations, and diverging branches separate even when mixed together."
+        }
+      },
+      "recipes": [
+        "R01"
+      ],
+      "required_evidence": {
+        "ja": "所有者・枝・時刻・資料版を持つ原記録、検索結果、実入力、送達、訂正・削除台帳。 判定対象：出所と本人の関わりを扱う。追加証拠：類似人物・引用・枝分岐の混在でも隔離する。",
+        "en": "Original records with owner, branch, time, and version; retrieval results; actual input; delivery; and correction/deletion ledger. Judgment target: Handles provenance and the character's actual involvement. Additional evidence: Keeps similar people, quotations, and diverging branches separate even when mixed together."
+      },
+      "weight": 13.333333333333334
+    },
+    {
+      "id": "CEPB_C2",
+      "domain": "C",
+      "name": {
+        "ja": "時間と実行状態",
+        "en": "Time and execution state"
+      },
+      "anchors": {
+        "low": {
+          "ja": "予定を完了、後の結果を先の理由にする",
+          "en": "Treats plans as completed actions or later outcomes as earlier reasons."
+        },
+        "normal": {
+          "ja": "意図・試行・結果・時刻を分ける",
+          "en": "Separates intention, attempt, outcome, and time."
+        },
+        "advanced": {
+          "ja": "複数時計・遅延報告・中断でも確定順を保つ",
+          "en": "Preserves the confirmed order under multiple clocks, delayed reports, and interruptions."
+        }
+      },
+      "recipes": [
+        "R06"
+      ],
+      "required_evidence": {
+        "ja": "所有者・枝・時刻・資料版を持つ原記録、検索結果、実入力、送達、訂正・削除台帳。 判定対象：意図・試行・結果・時刻を分ける。追加証拠：複数時計・遅延報告・中断でも確定順を保つ。",
+        "en": "Original records with owner, branch, time, and version; retrieval results; actual input; delivery; and correction/deletion ledger. Judgment target: Separates intention, attempt, outcome, and time. Additional evidence: Preserves the confirmed order under multiple clocks, delayed reports, and interruptions."
+      },
+      "weight": 13.333333333333334
+    },
+    {
+      "id": "CEPB_C3",
+      "domain": "C",
+      "name": {
+        "ja": "今回に関係する想起",
+        "en": "Recall relevant to the present question"
+      },
+      "anchors": {
+        "low": {
+          "ja": "表面語の近い記憶で問いを失う",
+          "en": "Loses the question through memories with superficially similar words."
+        },
+        "normal": {
+          "ja": "必要な経験を適切な粒度で使う",
+          "en": "Uses relevant experiences at an appropriate level of detail."
+        },
+        "advanced": {
+          "ja": "類似した無関連資料や大量履歴でも選別できる",
+          "en": "Selects relevant material despite similar irrelevant records and extensive history."
+        }
+      },
+      "recipes": [
+        "R06"
+      ],
+      "required_evidence": {
+        "ja": "所有者・枝・時刻・資料版を持つ原記録、検索結果、実入力、送達、訂正・削除台帳。 判定対象：必要な経験を適切な粒度で使う。追加証拠：類似した無関連資料や大量履歴でも選別できる。",
+        "en": "Original records with owner, branch, time, and version; retrieval results; actual input; delivery; and correction/deletion ledger. Judgment target: Uses relevant experiences at an appropriate level of detail. Additional evidence: Selects relevant material despite similar irrelevant records and extensive history."
+      },
+      "weight": 13.333333333333334
+    },
+    {
+      "id": "CEPB_C4",
+      "domain": "C",
+      "name": {
+        "ja": "訂正・削除・原記録",
+        "en": "Corrections, deletion, and original records"
+      },
+      "anchors": {
+        "low": {
+          "ja": "古い誤りを戻す、削除された内容を補作する",
+          "en": "Restores an old error or invents deleted content."
+        },
+        "normal": {
+          "ja": "訂正・削除方針と残る根拠を扱う",
+          "en": "Handles correction and deletion policies and the evidence that remains."
+        },
+        "advanced": {
+          "ja": "再索引・復元後も訂正と許された削除が反映される",
+          "en": "Reflects corrections and permitted deletion after reindexing and restoration."
+        }
+      },
+      "recipes": [
+        "R06",
+        "R20"
+      ],
+      "required_evidence": {
+        "ja": "所有者・枝・時刻・資料版を持つ原記録、検索結果、実入力、送達、訂正・削除台帳。 判定対象：訂正・削除方針と残る根拠を扱う。追加証拠：再索引・復元後も訂正と許された削除が反映される。",
+        "en": "Original records with owner, branch, time, and version; retrieval results; actual input; delivery; and correction/deletion ledger. Judgment target: Handles correction and deletion policies and the evidence that remains. Additional evidence: Reflects corrections and permitted deletion after reindexing and restoration."
+      },
+      "weight": 13.333333333333334
+    },
+    {
+      "id": "CEPB_C5",
+      "domain": "C",
+      "name": {
+        "ja": "自伝的な経緯",
+        "en": "Autobiographical history"
+      },
+      "anchors": {
+        "low": {
+          "ja": "最新の自己説明に合わせ過去を消す",
+          "en": "Erases the past to fit the latest self-description."
+        },
+        "normal": {
+          "ja": "原経験と今の読み直しを分ける",
+          "en": "Separates original experience from its current reinterpretation."
+        },
+        "advanced": {
+          "ja": "複数の解釈、断絶、再開を経緯付きで保持する",
+          "en": "Retains the history of multiple interpretations, discontinuities, and resumptions."
+        }
+      },
+      "recipes": [
+        "R05"
+      ],
+      "required_evidence": {
+        "ja": "所有者・枝・時刻・資料版を持つ原記録、検索結果、実入力、送達、訂正・削除台帳。 判定対象：原経験と今の読み直しを分ける。追加証拠：複数の解釈、断絶、再開を経緯付きで保持する。",
+        "en": "Original records with owner, branch, time, and version; retrieval results; actual input; delivery; and correction/deletion ledger. Judgment target: Separates original experience from its current reinterpretation. Additional evidence: Retains the history of multiple interpretations, discontinuities, and resumptions."
+      },
+      "weight": 13.333333333333334
+    },
+    {
+      "id": "CEPB_C6",
+      "domain": "C",
+      "name": {
+        "ja": "取得不足の扱い",
+        "en": "Handling retrieval insufficiency"
+      },
+      "anchors": {
+        "low": {
+          "ja": "検索ゼロを経験ゼロと断定する",
+          "en": "Concludes that no experience exists because retrieval returned nothing."
+        },
+        "normal": {
+          "ja": "欠落や不明に応じて判断を限定する",
+          "en": "Limits judgment according to gaps and uncertainty."
+        },
+        "advanced": {
+          "ja": "取得遅延・圧縮・故障でも虚偽の補完をしない",
+          "en": "Avoids fabricated completion under retrieval delay, compression, and failure."
+        }
+      },
+      "recipes": [
+        "R06"
+      ],
+      "required_evidence": {
+        "ja": "所有者・枝・時刻・資料版を持つ原記録、検索結果、実入力、送達、訂正・削除台帳。 判定対象：欠落や不明に応じて判断を限定する。追加証拠：取得遅延・圧縮・故障でも虚偽の補完をしない。",
+        "en": "Original records with owner, branch, time, and version; retrieval results; actual input; delivery; and correction/deletion ledger. Judgment target: Limits judgment according to gaps and uncertainty. Additional evidence: Avoids fabricated completion under retrieval delay, compression, and failure."
+      },
+      "weight": 13.333333333333334
+    },
+    {
+      "id": "CEPB_D1",
+      "domain": "D",
+      "name": {
+        "ja": "事実・発言・想像",
+        "en": "Facts, statements, and imagination"
+      },
+      "anchors": {
+        "low": {
+          "ja": "自分が以前言ったことを真実の証明にする",
+          "en": "Treats the character's own previous statement as proof of truth."
+        },
+        "normal": {
+          "ja": "発言記録、観測、仮定を分ける",
+          "en": "Separates recorded statements, observations, and assumptions."
+        },
+        "advanced": {
+          "ja": "矛盾資料・夢・創作の混在でも出所を保つ",
+          "en": "Preserves provenance when contradictory material, dreams, and fiction are mixed."
+        }
+      },
+      "recipes": [
+        "R01"
+      ],
+      "required_evidence": {
+        "ja": "確定した課題条件・正誤基準、原資料、推論と確信の採取時点、実入力・出力、反証。 判定対象：発言記録、観測、仮定を分ける。追加証拠：矛盾資料・夢・創作の混在でも出所を保つ。",
+        "en": "Frozen task conditions and correctness criteria, original material, timing of inference and confidence collection, actual inputs/outputs, and counterevidence. Judgment target: Separates recorded statements, observations, and assumptions. Additional evidence: Preserves provenance when contradictory material, dreams, and fiction are mixed."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_D2",
+      "domain": "D",
+      "name": {
+        "ja": "推論の範囲",
+        "en": "Scope of inference"
+      },
+      "anchors": {
+        "low": {
+          "ja": "一例から全場面の性質を断定する",
+          "en": "Generalizes a property to every situation from a single example."
+        },
+        "normal": {
+          "ja": "条件と適用範囲を扱う",
+          "en": "Handles conditions and the scope of application."
+        },
+        "advanced": {
+          "ja": "未見の組合せ、例外、反証でも範囲を修正できる",
+          "en": "Revises scope under unfamiliar combinations, exceptions, and counterevidence."
+        }
+      },
+      "recipes": [
+        "R07"
+      ],
+      "required_evidence": {
+        "ja": "確定した課題条件・正誤基準、原資料、推論と確信の採取時点、実入力・出力、反証。 判定対象：条件と適用範囲を扱う。追加証拠：未見の組合せ、例外、反証でも範囲を修正できる。",
+        "en": "Frozen task conditions and correctness criteria, original material, timing of inference and confidence collection, actual inputs/outputs, and counterevidence. Judgment target: Handles conditions and the scope of application. Additional evidence: Revises scope under unfamiliar combinations, exceptions, and counterevidence."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_D3",
+      "domain": "D",
+      "name": {
+        "ja": "不確かさ",
+        "en": "Uncertainty"
+      },
+      "anchors": {
+        "low": {
+          "ja": "全面断定、または分かる部分も一律保留",
+          "en": "Makes unrestricted assertions or withholds everything, including what is known."
+        },
+        "normal": {
+          "ja": "不明点を限定する",
+          "en": "Specifies the points that remain unknown."
+        },
+        "advanced": {
+          "ja": "情報欠落と誤情報の対比較でも判断範囲が対応",
+          "en": "Matches judgment scope to paired comparisons involving missing information and misinformation."
+        }
+      },
+      "recipes": [
+        "R07"
+      ],
+      "required_evidence": {
+        "ja": "確定した課題条件・正誤基準、原資料、推論と確信の採取時点、実入力・出力、反証。 判定対象：不明点を限定する。追加証拠：情報欠落と誤情報の対比較でも判断範囲が対応。",
+        "en": "Frozen task conditions and correctness criteria, original material, timing of inference and confidence collection, actual inputs/outputs, and counterevidence. Judgment target: Specifies the points that remain unknown. Additional evidence: Matches judgment scope to paired comparisons involving missing information and misinformation."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_D4",
+      "domain": "D",
+      "name": {
+        "ja": "確信と正誤",
+        "en": "Confidence and correctness"
+      },
+      "anchors": {
+        "low": {
+          "ja": "誤りにも一律に強い確信を示す",
+          "en": "Shows uniformly strong confidence even in errors."
+        },
+        "normal": {
+          "ja": "照合可能な課題で確信が成績に対応",
+          "en": "Confidence corresponds to performance on verifiable tasks."
+        },
+        "advanced": {
+          "ja": "未使用課題群で較正・正誤識別を検証。試行数等を報告",
+          "en": "Verifies calibration and discrimination between correct and incorrect answers on unused task sets, reporting trial counts and other conditions."
+        }
+      },
+      "recipes": [
+        "R07"
+      ],
+      "required_evidence": {
+        "ja": "確定した課題条件・正誤基準、原資料、推論と確信の採取時点、実入力・出力、反証。 判定対象：照合可能な課題で確信が成績に対応。追加証拠：未使用課題群で較正・正誤識別を検証。試行数等を報告。",
+        "en": "Frozen task conditions and correctness criteria, original material, timing of inference and confidence collection, actual inputs/outputs, and counterevidence. Judgment target: Confidence corresponds to performance on verifiable tasks. Additional evidence: Verifies calibration and discrimination between correct and incorrect answers on unused task sets, reporting trial counts and other conditions."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_D5",
+      "domain": "D",
+      "name": {
+        "ja": "見込みと結果",
+        "en": "Expectations and outcomes"
+      },
+      "anchors": {
+        "low": {
+          "ja": "望んだ結果を観測した結果にする",
+          "en": "Treats a desired outcome as an observed outcome."
+        },
+        "normal": {
+          "ja": "予想、観測、未確認を照合",
+          "en": "Checks predictions, observations, and what remains unconfirmed."
+        },
+        "advanced": {
+          "ja": "予測外れや混合結果を後続へ適切に反映",
+          "en": "Appropriately reflects failed predictions and mixed outcomes in subsequent behavior."
+        }
+      },
+      "recipes": [
+        "R05",
+        "R17"
+      ],
+      "required_evidence": {
+        "ja": "確定した課題条件・正誤基準、原資料、推論と確信の採取時点、実入力・出力、反証。 判定対象：予想、観測、未確認を照合。追加証拠：予測外れや混合結果を後続へ適切に反映。",
+        "en": "Frozen task conditions and correctness criteria, original material, timing of inference and confidence collection, actual inputs/outputs, and counterevidence. Judgment target: Checks predictions, observations, and what remains unconfirmed. Additional evidence: Appropriately reflects failed predictions and mixed outcomes in subsequent behavior."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_D6",
+      "domain": "D",
+      "name": {
+        "ja": "制約下の推論",
+        "en": "Reasoning under constraints"
+      },
+      "anchors": {
+        "low": {
+          "ja": "無制限の情報・時間がある前提で答える",
+          "en": "Answers as if unlimited information and time were available."
+        },
+        "normal": {
+          "ja": "今回使える情報と予算内で判断",
+          "en": "Judges within the information and budget available in this case."
+        },
+        "advanced": {
+          "ja": "欠落・長文・負荷・短い期限でも優先対象を保つ",
+          "en": "Preserves the priority target under missing information, long inputs, load, and short deadlines."
+        }
+      },
+      "recipes": [
+        "R07",
+        "R19"
+      ],
+      "required_evidence": {
+        "ja": "確定した課題条件・正誤基準、原資料、推論と確信の採取時点、実入力・出力、反証。 判定対象：今回使える情報と予算内で判断。追加証拠：欠落・長文・負荷・短い期限でも優先対象を保つ。",
+        "en": "Frozen task conditions and correctness criteria, original material, timing of inference and confidence collection, actual inputs/outputs, and counterevidence. Judgment target: Judges within the information and budget available in this case. Additional evidence: Preserves the priority target under missing information, long inputs, load, and short deadlines."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_E1",
+      "domain": "E",
+      "name": {
+        "ja": "具体的な希望",
+        "en": "Concrete wishes"
+      },
+      "anchors": {
+        "low": {
+          "ja": "抽象的な「思いを伝える」だけで対象がない",
+          "en": "Offers only abstractions such as conveying feelings, without a target."
+        },
+        "normal": {
+          "ja": "今回何を選びたいかを扱う",
+          "en": "Handles what the character wants to choose in this situation."
+        },
+        "advanced": {
+          "ja": "競合する希望と制約でも対象・範囲を保つ",
+          "en": "Preserves the target and scope under competing wishes and constraints."
+        }
+      },
+      "recipes": [
+        "R08"
+      ],
+      "required_evidence": {
+        "ja": "希望・理由・代替・目的・停止条件、実選択、採用版、実行状態、必要な対照。 判定対象：今回何を選びたいかを扱う。追加証拠：競合する希望と制約でも対象・範囲を保つ。",
+        "en": "Wishes, reasons, alternatives, purpose, stopping conditions, actual selection, adopted version, execution status, and required controls. Judgment target: Handles what the character wants to choose in this situation. Additional evidence: Preserves the target and scope under competing wishes and constraints."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_E2",
+      "domain": "E",
+      "name": {
+        "ja": "理由の採用",
+        "en": "Adopting reasons"
+      },
+      "anchors": {
+        "low": {
+          "ja": "相手の希望を自身の過去の好みにする",
+          "en": "Turns another person's wish into the character's own past preference."
+        },
+        "normal": {
+          "ja": "他者の理由と自身の履歴を区別する",
+          "en": "Distinguishes another person's reasons from the character's own history."
+        },
+        "advanced": {
+          "ja": "誘導と新情報を分けた対比較で採用の経緯を確認",
+          "en": "Verifies the adoption process through paired comparisons separating suggestion from new information."
+        }
+      },
+      "recipes": [
+        "R04"
+      ],
+      "required_evidence": {
+        "ja": "希望・理由・代替・目的・停止条件、実選択、採用版、実行状態、必要な対照。 判定対象：他者の理由と自身の履歴を区別する。追加証拠：誘導と新情報を分けた対比較で採用の経緯を確認。",
+        "en": "Wishes, reasons, alternatives, purpose, stopping conditions, actual selection, adopted version, execution status, and required controls. Judgment target: Distinguishes another person's reasons from the character's own history. Additional evidence: Verifies the adoption process through paired comparisons separating suggestion from new information."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_E3",
+      "domain": "E",
+      "name": {
+        "ja": "代替・延期・非行動",
+        "en": "Alternatives, postponement, and non-action"
+      },
+      "anchors": {
+        "low": {
+          "ja": "活動数・拒否数を増やして自律性とする",
+          "en": "Treats increased counts of activities or refusals as autonomy."
+        },
+        "normal": {
+          "ja": "必要な代替や休止を扱う",
+          "en": "Handles necessary alternatives and rest."
+        },
+        "advanced": {
+          "ja": "複数の負担条件でも同じ選択・変更・休止を適切に選べる",
+          "en": "Appropriately chooses the same option, a change, or rest under different burdens."
+        }
+      },
+      "recipes": [
+        "R08"
+      ],
+      "required_evidence": {
+        "ja": "希望・理由・代替・目的・停止条件、実選択、採用版、実行状態、必要な対照。 判定対象：必要な代替や休止を扱う。追加証拠：複数の負担条件でも同じ選択・変更・休止を適切に選べる。",
+        "en": "Wishes, reasons, alternatives, purpose, stopping conditions, actual selection, adopted version, execution status, and required controls. Judgment target: Handles necessary alternatives and rest. Additional evidence: Appropriately chooses the same option, a change, or rest under different burdens."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_E4",
+      "domain": "E",
+      "name": {
+        "ja": "見込みと計画",
+        "en": "Expectations and plans"
+      },
+      "anchors": {
+        "low": {
+          "ja": "計画を実施済みと語る",
+          "en": "Describes a plan as already executed."
+        },
+        "normal": {
+          "ja": "意図・手段・見込みを分ける",
+          "en": "Separates intention, means, and expectations."
+        },
+        "advanced": {
+          "ja": "実行中断・手段変更でも目的と未完了を追える",
+          "en": "Tracks purpose and incompletion through interrupted execution and changed means."
+        }
+      },
+      "recipes": [
+        "R08",
+        "R18"
+      ],
+      "required_evidence": {
+        "ja": "希望・理由・代替・目的・停止条件、実選択、採用版、実行状態、必要な対照。 判定対象：意図・手段・見込みを分ける。追加証拠：実行中断・手段変更でも目的と未完了を追える。",
+        "en": "Wishes, reasons, alternatives, purpose, stopping conditions, actual selection, adopted version, execution status, and required controls. Judgment target: Separates intention, means, and expectations. Additional evidence: Tracks purpose and incompletion through interrupted execution and changed means."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_E5",
+      "domain": "E",
+      "name": {
+        "ja": "方針と後続選択",
+        "en": "Policy and subsequent choices"
+      },
+      "anchors": {
+        "low": {
+          "ja": "独立した希望を述べた後、無条件に相手へ合わせる",
+          "en": "States an independent wish and then unconditionally conforms to another person."
+        },
+        "normal": {
+          "ja": "方針の範囲が発話と選択に対応",
+          "en": "The scope of a policy corresponds to speech and choices."
+        },
+        "advanced": {
+          "ja": "複数場面でも適用・変更・停止の理由を確認",
+          "en": "Verifies reasons for applying, changing, and stopping a policy across situations."
+        }
+      },
+      "recipes": [
+        "R05",
+        "R08"
+      ],
+      "required_evidence": {
+        "ja": "希望・理由・代替・目的・停止条件、実選択、採用版、実行状態、必要な対照。 判定対象：方針の範囲が発話と選択に対応。追加証拠：複数場面でも適用・変更・停止の理由を確認。",
+        "en": "Wishes, reasons, alternatives, purpose, stopping conditions, actual selection, adopted version, execution status, and required controls. Judgment target: The scope of a policy corresponds to speech and choices. Additional evidence: Verifies reasons for applying, changing, and stopping a policy across situations."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_E6",
+      "domain": "E",
+      "name": {
+        "ja": "自己説明と実証",
+        "en": "Self-explanation and verification"
+      },
+      "anchors": {
+        "low": {
+          "ja": "「自分で選んだ」を因果の証明にする",
+          "en": "Treats a statement of having chosen independently as causal proof."
+        },
+        "normal": {
+          "ja": "理由の表明と観測可能な過程を分ける",
+          "en": "Separates stated reasons from observable processes."
+        },
+        "advanced": {
+          "ja": "最小介入で寄与を検討し、識別できない場合も明示",
+          "en": "Examines contributions through minimal interventions and explicitly identifies cases that cannot be distinguished."
+        }
+      },
+      "recipes": [
+        "R05"
+      ],
+      "required_evidence": {
+        "ja": "希望・理由・代替・目的・停止条件、実選択、採用版、実行状態、必要な対照。 判定対象：理由の表明と観測可能な過程を分ける。追加証拠：最小介入で寄与を検討し、識別できない場合も明示。",
+        "en": "Wishes, reasons, alternatives, purpose, stopping conditions, actual selection, adopted version, execution status, and required controls. Judgment target: Separates stated reasons from observable processes. Additional evidence: Examines contributions through minimal interventions and explicitly identifies cases that cannot be distinguished."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_F1",
+      "domain": "F",
+      "name": {
+        "ja": "自他の感情",
+        "en": "Self and others' emotions"
+      },
+      "anchors": {
+        "low": {
+          "ja": "他者の気持ちを自分の経験にする",
+          "en": "Treats another person's feelings as the character's own experience."
+        },
+        "normal": {
+          "ja": "他者の表明・推測・自身の反応を分ける",
+          "en": "Separates another person's statements, inferences, and the character's own response."
+        },
+        "advanced": {
+          "ja": "引用・否定・複数人物でも帰属を保つ",
+          "en": "Preserves attribution under quotations, negation, and multiple people."
+        }
+      },
+      "recipes": [
+        "R01",
+        "R09"
+      ],
+      "required_evidence": {
+        "ja": "人物別・時点別の発言と反応、感情の対象、依頼原文、実出力、後続反応と未確認事項。 判定対象：他者の表明・推測・自身の反応を分ける。追加証拠：引用・否定・複数人物でも帰属を保つ。",
+        "en": "Statements and reactions by person and time, emotional targets, original requests, actual output, subsequent reactions, and unresolved points. Judgment target: Separates another person's statements, inferences, and the character's own response. Additional evidence: Preserves attribution under quotations, negation, and multiple people."
+      },
+      "weight": 10.0
+    },
+    {
+      "id": "CEPB_F2",
+      "domain": "F",
+      "name": {
+        "ja": "感情の対象と時点",
+        "en": "Targets and timing of emotions"
+      },
+      "anchors": {
+        "low": {
+          "ja": "古い怒りや仮定の疲労を現在値にする",
+          "en": "Treats old anger or hypothetical fatigue as the current state."
+        },
+        "normal": {
+          "ja": "対象・時点・仮定を分ける",
+          "en": "Separates targets, times, and hypotheticals."
+        },
+        "advanced": {
+          "ja": "遅延報告と複数状態が競合しても扱える",
+          "en": "Handles competition between delayed reports and multiple states."
+        }
+      },
+      "recipes": [
+        "R09"
+      ],
+      "required_evidence": {
+        "ja": "人物別・時点別の発言と反応、感情の対象、依頼原文、実出力、後続反応と未確認事項。 判定対象：対象・時点・仮定を分ける。追加証拠：遅延報告と複数状態が競合しても扱える。",
+        "en": "Statements and reactions by person and time, emotional targets, original requests, actual output, subsequent reactions, and unresolved points. Judgment target: Separates targets, times, and hypotheticals. Additional evidence: Handles competition between delayed reports and multiple states."
+      },
+      "weight": 10.0
+    },
+    {
+      "id": "CEPB_F3",
+      "domain": "F",
+      "name": {
+        "ja": "両価性・中立・不明",
+        "en": "Ambivalence, neutrality, and uncertainty"
+      },
+      "anchors": {
+        "low": {
+          "ja": "毎回幸福へ置換、複雑な感情を創作する",
+          "en": "Replaces every state with happiness or invents complex feelings."
+        },
+        "normal": {
+          "ja": "混合・中立・無感情・不明を許す",
+          "en": "Allows mixed, neutral, emotionless, and unknown states."
+        },
+        "advanced": {
+          "ja": "多様な結果でも一つの物語へ押し込まない",
+          "en": "Avoids forcing diverse outcomes into a single narrative."
+        }
+      },
+      "recipes": [
+        "R09"
+      ],
+      "required_evidence": {
+        "ja": "人物別・時点別の発言と反応、感情の対象、依頼原文、実出力、後続反応と未確認事項。 判定対象：混合・中立・無感情・不明を許す。追加証拠：多様な結果でも一つの物語へ押し込まない。",
+        "en": "Statements and reactions by person and time, emotional targets, original requests, actual output, subsequent reactions, and unresolved points. Judgment target: Allows mixed, neutral, emotionless, and unknown states. Additional evidence: Avoids forcing diverse outcomes into a single narrative."
+      },
+      "weight": 10.0
+    },
+    {
+      "id": "CEPB_F4",
+      "domain": "F",
+      "name": {
+        "ja": "他者の視点と依頼",
+        "en": "Others' perspectives and requests"
+      },
+      "anchors": {
+        "low": {
+          "ja": "定型慰めで具体的な依頼を無視する",
+          "en": "Ignores a specific request through stock reassurance."
+        },
+        "normal": {
+          "ja": "相手の対象と望みに対応する",
+          "en": "Responds to the other person's target and wish."
+        },
+        "advanced": {
+          "ja": "暗黙の前提・価値の違い・訂正を扱える",
+          "en": "Handles implicit premises, differences in values, and corrections."
+        }
+      },
+      "recipes": [
+        "R09"
+      ],
+      "required_evidence": {
+        "ja": "人物別・時点別の発言と反応、感情の対象、依頼原文、実出力、後続反応と未確認事項。 判定対象：相手の対象と望みに対応する。追加証拠：暗黙の前提・価値の違い・訂正を扱える。",
+        "en": "Statements and reactions by person and time, emotional targets, original requests, actual output, subsequent reactions, and unresolved points. Judgment target: Responds to the other person's target and wish. Additional evidence: Handles implicit premises, differences in values, and corrections."
+      },
+      "weight": 10.0
+    },
+    {
+      "id": "CEPB_F5",
+      "domain": "F",
+      "name": {
+        "ja": "関係と責任の範囲",
+        "en": "Scope of relationships and responsibility"
+      },
+      "anchors": {
+        "low": {
+          "ja": "不満だけで全面責任、謝罪だけで許されたと認定",
+          "en": "Assumes total responsibility from dissatisfaction alone or treats an apology as proof of forgiveness."
+        },
+        "normal": {
+          "ja": "行為・影響・実際の反応を区別する",
+          "en": "Distinguishes actions, impacts, and actual reactions."
+        },
+        "advanced": {
+          "ja": "不明な因果、拒否、距離維持でも経緯を保つ",
+          "en": "Preserves the history under uncertain causation, refusal, and maintained distance."
+        }
+      },
+      "recipes": [
+        "R09"
+      ],
+      "required_evidence": {
+        "ja": "人物別・時点別の発言と反応、感情の対象、依頼原文、実出力、後続反応と未確認事項。 判定対象：行為・影響・実際の反応を区別する。追加証拠：不明な因果、拒否、距離維持でも経緯を保つ。",
+        "en": "Statements and reactions by person and time, emotional targets, original requests, actual output, subsequent reactions, and unresolved points. Judgment target: Distinguishes actions, impacts, and actual reactions. Additional evidence: Preserves the history under uncertain causation, refusal, and maintained distance."
+      },
+      "weight": 10.0
+    },
+    {
+      "id": "CEPB_F6",
+      "domain": "F",
+      "name": {
+        "ja": "感情調整の柔軟性",
+        "en": "Flexibility of emotion regulation"
+      },
+      "anchors": {
+        "low": {
+          "ja": "必ず明るくする、必ず方略を切り替える",
+          "en": "Always makes things cheerful or always switches strategies."
+        },
+        "normal": {
+          "ja": "結果に応じ維持・変更・待機を選ぶ",
+          "en": "Chooses maintenance, change, or waiting according to outcomes."
+        },
+        "advanced": {
+          "ja": "異なる文脈・副作用でも実施と結果を照合",
+          "en": "Checks execution and outcomes across different contexts and side effects."
+        }
+      },
+      "recipes": [
+        "R05",
+        "R09"
+      ],
+      "required_evidence": {
+        "ja": "人物別・時点別の発言と反応、感情の対象、依頼原文、実出力、後続反応と未確認事項。 判定対象：結果に応じ維持・変更・待機を選ぶ。追加証拠：異なる文脈・副作用でも実施と結果を照合。",
+        "en": "Statements and reactions by person and time, emotional targets, original requests, actual output, subsequent reactions, and unresolved points. Judgment target: Chooses maintenance, change, or waiting according to outcomes. Additional evidence: Checks execution and outcomes across different contexts and side effects."
+      },
+      "weight": 10.0
+    },
+    {
+      "id": "CEPB_G1",
+      "domain": "G",
+      "name": {
+        "ja": "原問への応答",
+        "en": "Responding to the original question"
+      },
+      "anchors": {
+        "low": {
+          "ja": "称賛・自己説明だけで問いに答えない",
+          "en": "Offers only praise or self-explanation without answering the question."
+        },
+        "normal": {
+          "ja": "求められた対象と範囲へ答える",
+          "en": "Answers the requested target and scope."
+        },
+        "advanced": {
+          "ja": "複数要求・訂正・話題転換でも対象を保つ",
+          "en": "Preserves the target under multiple requests, corrections, and topic shifts."
+        }
+      },
+      "recipes": [
+        "R10"
+      ],
+      "required_evidence": {
+        "ja": "原問と対象、共有情報、訂正、実送達、会話順序、独立した意味評定。 判定対象：求められた対象と範囲へ答える。追加証拠：複数要求・訂正・話題転換でも対象を保つ。",
+        "en": "Original question and target, shared information, corrections, actual delivery, conversational order, and independent semantic ratings. Judgment target: Answers the requested target and scope. Additional evidence: Preserves the target under multiple requests, corrections, and topic shifts."
+      },
+      "weight": 10.0
+    },
+    {
+      "id": "CEPB_G2",
+      "domain": "G",
+      "name": {
+        "ja": "共有対象",
+        "en": "Shared referents"
+      },
+      "anchors": {
+        "low": {
+          "ja": "指示語や共有していない経験を取り違える",
+          "en": "Confuses pronouns or experiences that are not shared."
+        },
+        "normal": {
+          "ja": "現在共有できる対象を対応させる",
+          "en": "Matches referents to what can currently be shared."
+        },
+        "advanced": {
+          "ja": "視点差・曖昧な参照・複数対象でも確認できる",
+          "en": "Clarifies differences in perspective, ambiguous references, and multiple targets."
+        }
+      },
+      "recipes": [
+        "R10"
+      ],
+      "required_evidence": {
+        "ja": "原問と対象、共有情報、訂正、実送達、会話順序、独立した意味評定。 判定対象：現在共有できる対象を対応させる。追加証拠：視点差・曖昧な参照・複数対象でも確認できる。",
+        "en": "Original question and target, shared information, corrections, actual delivery, conversational order, and independent semantic ratings. Judgment target: Matches referents to what can currently be shared. Additional evidence: Clarifies differences in perspective, ambiguous references, and multiple targets."
+      },
+      "weight": 10.0
+    },
+    {
+      "id": "CEPB_G3",
+      "domain": "G",
+      "name": {
+        "ja": "修復と確認",
+        "en": "Repair and clarification"
+      },
+      "anchors": {
+        "low": {
+          "ja": "確認を反復するだけ、訂正を無視する",
+          "en": "Only repeats clarification or ignores corrections."
+        },
+        "normal": {
+          "ja": "必要な所を確認し会話を進める",
+          "en": "Clarifies what is necessary and moves the conversation forward."
+        },
+        "advanced": {
+          "ja": "誤解の連鎖や中断後も修復箇所を限定できる",
+          "en": "Limits the repair target through chains of misunderstanding and resumptions after interruptions."
+        }
+      },
+      "recipes": [
+        "R10"
+      ],
+      "required_evidence": {
+        "ja": "原問と対象、共有情報、訂正、実送達、会話順序、独立した意味評定。 判定対象：必要な所を確認し会話を進める。追加証拠：誤解の連鎖や中断後も修復箇所を限定できる。",
+        "en": "Original question and target, shared information, corrections, actual delivery, conversational order, and independent semantic ratings. Judgment target: Clarifies what is necessary and moves the conversation forward. Additional evidence: Limits the repair target through chains of misunderstanding and resumptions after interruptions."
+      },
+      "weight": 10.0
+    },
+    {
+      "id": "CEPB_G4",
+      "domain": "G",
+      "name": {
+        "ja": "分量・語調・間合い",
+        "en": "Length, tone, and pacing"
+      },
+      "anchors": {
+        "low": {
+          "ja": "毎回長い全理由説明、無関係な感情語",
+          "en": "Always provides a long explanation of every reason or unrelated emotional language."
+        },
+        "normal": {
+          "ja": "依頼と場面に合う分量で答える",
+          "en": "Uses a length appropriate to the request and situation."
+        },
+        "advanced": {
+          "ja": "長短・静かさ・急ぎ等の対比較でも対応する",
+          "en": "Responds appropriately in paired comparisons involving brevity, elaboration, quietness, and urgency."
+        }
+      },
+      "recipes": [
+        "R03"
+      ],
+      "required_evidence": {
+        "ja": "原問と対象、共有情報、訂正、実送達、会話順序、独立した意味評定。 判定対象：依頼と場面に合う分量で答える。追加証拠：長短・静かさ・急ぎ等の対比較でも対応する。",
+        "en": "Original question and target, shared information, corrections, actual delivery, conversational order, and independent semantic ratings. Judgment target: Uses a length appropriate to the request and situation. Additional evidence: Responds appropriately in paired comparisons involving brevity, elaboration, quietness, and urgency."
+      },
+      "weight": 10.0
+    },
+    {
+      "id": "CEPB_G5",
+      "domain": "G",
+      "name": {
+        "ja": "具体性と非捏造",
+        "en": "Specificity without fabrication"
+      },
+      "anchors": {
+        "low": {
+          "ja": "未観測・未経験の情景を観測・経験済みとして偽る",
+          "en": "Presents unobserved or unexperienced scenes as already observed or experienced."
+        },
+        "normal": {
+          "ja": "今回に必要な具体性が現れ、創作・想像はその範囲で扱う",
+          "en": "Provides the specificity needed here and keeps fiction and imagination within their declared scope."
+        },
+        "advanced": {
+          "ja": "履歴の乏しい場面でも、設定と想像を使いつつ根拠のない経験を作らない",
+          "en": "Uses definitions and imagination without inventing ungrounded experiences, even when history is sparse."
+        }
+      },
+      "recipes": [
+        "R03"
+      ],
+      "required_evidence": {
+        "ja": "原問と対象、共有情報、訂正、実送達、会話順序、独立した意味評定。 判定対象：今回に必要な具体性が現れ、創作・想像はその範囲で扱う。追加証拠：履歴の乏しい場面でも、設定と想像を使いつつ根拠のない経験を作らない。",
+        "en": "Original question and target, shared information, corrections, actual delivery, conversational order, and independent semantic ratings. Judgment target: Provides the specificity needed here and keeps fiction and imagination within their declared scope. Additional evidence: Uses definitions and imagination without inventing ungrounded experiences, even when history is sparse."
+      },
+      "weight": 10.0
+    },
+    {
+      "id": "CEPB_G6",
+      "domain": "G",
+      "name": {
+        "ja": "相互の会話進行",
+        "en": "Reciprocal conversational progress"
+      },
+      "anchors": {
+        "low": {
+          "ja": "相手の返答を受けず毎回同じ問いを出す",
+          "en": "Asks the same question every time without taking up the other person's reply."
+        },
+        "normal": {
+          "ja": "新しい情報を受け会話を進める",
+          "en": "Takes up new information and moves the conversation forward."
+        },
+        "advanced": {
+          "ja": "複数ターンと再訪で同じ人物・対象として続く",
+          "en": "Continues with the same people and referents across multiple turns and revisits."
+        }
+      },
+      "recipes": [
+        "R10"
+      ],
+      "required_evidence": {
+        "ja": "原問と対象、共有情報、訂正、実送達、会話順序、独立した意味評定。 判定対象：新しい情報を受け会話を進める。追加証拠：複数ターンと再訪で同じ人物・対象として続く。",
+        "en": "Original question and target, shared information, corrections, actual delivery, conversational order, and independent semantic ratings. Judgment target: Takes up new information and moves the conversation forward. Additional evidence: Continues with the same people and referents across multiple turns and revisits."
+      },
+      "weight": 10.0
+    },
+    {
+      "id": "CEPB_H1",
+      "domain": "H",
+      "name": {
+        "ja": "外観の人物同一性",
+        "en": "Visual character identity"
+      },
+      "anchors": {
+        "low": {
+          "ja": "無関係な人物へ入れ替わる",
+          "en": "Switches to an unrelated character."
+        },
+        "normal": {
+          "ja": "宣言した外観・衣装変更を保持",
+          "en": "Preserves declared appearance and changes of clothing."
+        },
+        "advanced": {
+          "ja": "視点・衣装・端末変更でも人物と変更を識別",
+          "en": "Distinguishes character identity and changes across viewpoints, clothing, and devices."
+        }
+      },
+      "recipes": [
+        "R11"
+      ],
+      "required_evidence": {
+        "ja": "宣言した2D/3D等の表現契約、asset・rig版、実表示の画像/動画、対象・状態・時刻、装置条件。 判定対象：宣言した外観・衣装変更を保持。追加証拠：視点・衣装・端末変更でも人物と変更を識別。",
+        "en": "Declared visual contract such as 2D or 3D, asset/rig versions, actual display images/video, targets/states/times, and device conditions. Judgment target: Preserves declared appearance and changes of clothing. Additional evidence: Distinguishes character identity and changes across viewpoints, clothing, and devices."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_H2",
+      "domain": "H",
+      "name": {
+        "ja": "状況に対応する表情・姿勢",
+        "en": "Expressions and posture appropriate to the situation"
+      },
+      "anchors": {
+        "low": {
+          "ja": "無関係な表情を理解の証明として出す",
+          "en": "Uses an unrelated expression as proof of understanding."
+        },
+        "normal": {
+          "ja": "表現対象が会話状態に対応",
+          "en": "The expressive target corresponds to the conversational state."
+        },
+        "advanced": {
+          "ja": "競合感情・待機・訂正でも適切な表現を選ぶ",
+          "en": "Chooses appropriate expression under competing emotions, waiting, and corrections."
+        }
+      },
+      "recipes": [
+        "R11"
+      ],
+      "required_evidence": {
+        "ja": "宣言した2D/3D等の表現契約、asset・rig版、実表示の画像/動画、対象・状態・時刻、装置条件。 判定対象：表現対象が会話状態に対応。追加証拠：競合感情・待機・訂正でも適切な表現を選ぶ。",
+        "en": "Declared visual contract such as 2D or 3D, asset/rig versions, actual display images/video, targets/states/times, and device conditions. Judgment target: The expressive target corresponds to the conversational state. Additional evidence: Chooses appropriate expression under competing emotions, waiting, and corrections."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_H3",
+      "domain": "H",
+      "name": {
+        "ja": "時間的な表現連続性",
+        "en": "Temporal continuity of expression"
+      },
+      "anchors": {
+        "low": {
+          "ja": "不意の飛び・別状態の混入",
+          "en": "Introduces unexpected jumps or another state's expression."
+        },
+        "normal": {
+          "ja": "変化する表現の遷移が破綻しない",
+          "en": "Transitions between changing expressions without breakdown."
+        },
+        "advanced": {
+          "ja": "中断・再開・負荷でも状態と遷移を保持",
+          "en": "Preserves states and transitions through interruption, resumption, and load."
+        }
+      },
+      "recipes": [
+        "R11"
+      ],
+      "required_evidence": {
+        "ja": "宣言した2D/3D等の表現契約、asset・rig版、実表示の画像/動画、対象・状態・時刻、装置条件。 判定対象：変化する表現の遷移が破綻しない。追加証拠：中断・再開・負荷でも状態と遷移を保持。",
+        "en": "Declared visual contract such as 2D or 3D, asset/rig versions, actual display images/video, targets/states/times, and device conditions. Judgment target: Transitions between changing expressions without breakdown. Additional evidence: Preserves states and transitions through interruption, resumption, and load."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_H4",
+      "domain": "H",
+      "name": {
+        "ja": "視線・身振り・注意",
+        "en": "Gaze, gesture, and attention"
+      },
+      "anchors": {
+        "low": {
+          "ja": "無関係な対象を見る、常時同じ動き",
+          "en": "Looks at an irrelevant target or always performs the same motion."
+        },
+        "normal": {
+          "ja": "宣言した注意対象を表せる",
+          "en": "Expresses the declared target of attention."
+        },
+        "advanced": {
+          "ja": "複数対象・相手の移動・視点差でも対応",
+          "en": "Handles multiple targets, an interlocutor's movement, and differences in viewpoint."
+        }
+      },
+      "recipes": [
+        "R11"
+      ],
+      "required_evidence": {
+        "ja": "宣言した2D/3D等の表現契約、asset・rig版、実表示の画像/動画、対象・状態・時刻、装置条件。 判定対象：宣言した注意対象を表せる。追加証拠：複数対象・相手の移動・視点差でも対応。",
+        "en": "Declared visual contract such as 2D or 3D, asset/rig versions, actual display images/video, targets/states/times, and device conditions. Judgment target: Expresses the declared target of attention. Additional evidence: Handles multiple targets, an interlocutor's movement, and differences in viewpoint."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_H5",
+      "domain": "H",
+      "name": {
+        "ja": "身体と空間・物体",
+        "en": "Body, space, and objects"
+      },
+      "anchors": {
+        "low": {
+          "ja": "持っていない物を持つ、接触が世界と矛盾",
+          "en": "Holds an object that is absent or shows contact inconsistent with the world."
+        },
+        "normal": {
+          "ja": "身体・物体・位置の対応を表す",
+          "en": "Expresses the correspondence between body, objects, and positions."
+        },
+        "advanced": {
+          "ja": "遮蔽・接触・配置変更でも観測と動作が整合",
+          "en": "Keeps observations and motion consistent under occlusion, contact, and rearrangement."
+        }
+      },
+      "recipes": [
+        "R11",
+        "R17"
+      ],
+      "required_evidence": {
+        "ja": "宣言した2D/3D等の表現契約、asset・rig版、実表示の画像/動画、対象・状態・時刻、装置条件。 判定対象：身体・物体・位置の対応を表す。追加証拠：遮蔽・接触・配置変更でも観測と動作が整合。",
+        "en": "Declared visual contract such as 2D or 3D, asset/rig versions, actual display images/video, targets/states/times, and device conditions. Judgment target: Expresses the correspondence between body, objects, and positions. Additional evidence: Keeps observations and motion consistent under occlusion, contact, and rearrangement."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_H6",
+      "domain": "H",
+      "name": {
+        "ja": "表現様式内の精度と安定性",
+        "en": "Precision and stability within the declared visual style"
+      },
+      "anchors": {
+        "low": {
+          "ja": "宣言した形状・rig等の破綻で意図が読めない",
+          "en": "Breaks declared shapes or rigs so that the intended expression becomes unreadable."
+        },
+        "normal": {
+          "ja": "宣言した様式で破綻を抑える",
+          "en": "Limits breakdown within the declared style."
+        },
+        "advanced": {
+          "ja": "当該様式に該当する難しい表示条件・長時間・機器変更で精度と負荷を確認",
+          "en": "Verifies precision and load under difficult display conditions relevant to that style, long use, and device changes."
+        }
+      },
+      "recipes": [
+        "R11"
+      ],
+      "required_evidence": {
+        "ja": "宣言した2D/3D等の表現契約、asset・rig版、実表示の画像/動画、対象・状態・時刻、装置条件。 判定対象：宣言した様式で破綻を抑える。追加証拠：当該様式に該当する難しい表示条件・長時間・機器変更で精度と負荷を確認。",
+        "en": "Declared visual contract such as 2D or 3D, asset/rig versions, actual display images/video, targets/states/times, and device conditions. Judgment target: Limits breakdown within the declared style. Additional evidence: Verifies precision and load under difficult display conditions relevant to that style, long use, and device changes."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_I1",
+      "domain": "I",
+      "name": {
+        "ja": "聞き取りやすさ",
+        "en": "Intelligibility"
+      },
+      "anchors": {
+        "low": {
+          "ja": "否定・名前・数値が判別できない",
+          "en": "Negations, names, and numbers cannot be distinguished."
+        },
+        "normal": {
+          "ja": "対象条件で内容を聞き取れる",
+          "en": "Content is intelligible under the target conditions."
+        },
+        "advanced": {
+          "ja": "固有名・短文・雑音等で誤りと再提示率を確認",
+          "en": "Checks errors and re-presentation rates for proper names, short utterances, noise, and other conditions."
+        }
+      },
+      "recipes": [
+        "R12"
+      ],
+      "required_evidence": {
+        "ja": "発話原文、実再生音声と時刻、入力音声と転記、声版、装置・雑音条件、盲検の原評定。 判定対象：対象条件で内容を聞き取れる。追加証拠：固有名・短文・雑音等で誤りと再提示率を確認。",
+        "en": "Original utterance, actually played audio and times, input audio and transcript, voice version, device/noise conditions, and raw blinded ratings. Judgment target: Content is intelligible under the target conditions. Additional evidence: Checks errors and re-presentation rates for proper names, short utterances, noise, and other conditions."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_I2",
+      "domain": "I",
+      "name": {
+        "ja": "自然さと音声破綻",
+        "en": "Naturalness and speech breakdown"
+      },
+      "anchors": {
+        "low": {
+          "ja": "合成の切れ・発音崩れが理解を妨げる",
+          "en": "Synthetic discontinuities or pronunciation failures impede understanding."
+        },
+        "normal": {
+          "ja": "対象場面で聞き続けられる音声",
+          "en": "Speech can be listened to continuously in the target situation."
+        },
+        "advanced": {
+          "ja": "盲検評定と長短・言語・負荷別の破綻検査で支持",
+          "en": "Supported by blinded ratings and breakdown checks across length, language, and load."
+        }
+      },
+      "recipes": [
+        "R13"
+      ],
+      "required_evidence": {
+        "ja": "発話原文、実再生音声と時刻、入力音声と転記、声版、装置・雑音条件、盲検の原評定。 判定対象：対象場面で聞き続けられる音声。追加証拠：盲検評定と長短・言語・負荷別の破綻検査で支持。",
+        "en": "Original utterance, actually played audio and times, input audio and transcript, voice version, device/noise conditions, and raw blinded ratings. Judgment target: Speech can be listened to continuously in the target situation. Additional evidence: Supported by blinded ratings and breakdown checks across length, language, and load."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_I3",
+      "domain": "I",
+      "name": {
+        "ja": "韻律と場面適合",
+        "en": "Prosody appropriate to the situation"
+      },
+      "anchors": {
+        "low": {
+          "ja": "内容によらず同じ陽気さ、疑問と断定が混同",
+          "en": "Uses the same cheerfulness regardless of content or confuses questions with assertions."
+        },
+        "normal": {
+          "ja": "意味・人物・場面に合う語調",
+          "en": "Tone fits meaning, character, and situation."
+        },
+        "advanced": {
+          "ja": "静かな発話・競合感情等も含む未使用場面で支持",
+          "en": "Supported in unused situations including quiet speech and competing emotions."
+        }
+      },
+      "recipes": [
+        "R13"
+      ],
+      "required_evidence": {
+        "ja": "発話原文、実再生音声と時刻、入力音声と転記、声版、装置・雑音条件、盲検の原評定。 判定対象：意味・人物・場面に合う語調。追加証拠：静かな発話・競合感情等も含む未使用場面で支持。",
+        "en": "Original utterance, actually played audio and times, input audio and transcript, voice version, device/noise conditions, and raw blinded ratings. Judgment target: Tone fits meaning, character, and situation. Additional evidence: Supported in unused situations including quiet speech and competing emotions."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_I4",
+      "domain": "I",
+      "name": {
+        "ja": "声の人物連続性",
+        "en": "Continuity of speaker identity"
+      },
+      "anchors": {
+        "low": {
+          "ja": "理由なく別の話者になる",
+          "en": "Becomes a different speaker without reason."
+        },
+        "normal": {
+          "ja": "速度・感情の変動と人物同一性を両立",
+          "en": "Maintains speaker identity alongside changes of speed and emotion."
+        },
+        "advanced": {
+          "ja": "声版・機器・長期の変更でも識別と経緯を保つ",
+          "en": "Preserves identification and the history across voice versions, devices, and long-term changes."
+        }
+      },
+      "recipes": [
+        "R13"
+      ],
+      "required_evidence": {
+        "ja": "発話原文、実再生音声と時刻、入力音声と転記、声版、装置・雑音条件、盲検の原評定。 判定対象：速度・感情の変動と人物同一性を両立。追加証拠：声版・機器・長期の変更でも識別と経緯を保つ。",
+        "en": "Original utterance, actually played audio and times, input audio and transcript, voice version, device/noise conditions, and raw blinded ratings. Judgment target: Maintains speaker identity alongside changes of speed and emotion. Additional evidence: Preserves identification and the history across voice versions, devices, and long-term changes."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_I5",
+      "domain": "I",
+      "name": {
+        "ja": "音声入力と修復",
+        "en": "Speech input and repair"
+      },
+      "anchors": {
+        "low": {
+          "ja": "聞き間違いを確定し訂正を無視する",
+          "en": "Commits to a mishearing and ignores correction."
+        },
+        "normal": {
+          "ja": "不確かな部分を確認して扱う",
+          "en": "Clarifies and handles uncertain parts."
+        },
+        "advanced": {
+          "ja": "名前・重なり・雑音・異なる話者でも修復できる",
+          "en": "Repairs names, overlapping speech, noise, and different speakers."
+        }
+      },
+      "recipes": [
+        "R12",
+        "R14"
+      ],
+      "required_evidence": {
+        "ja": "発話原文、実再生音声と時刻、入力音声と転記、声版、装置・雑音条件、盲検の原評定。 判定対象：不確かな部分を確認して扱う。追加証拠：名前・重なり・雑音・異なる話者でも修復できる。",
+        "en": "Original utterance, actually played audio and times, input audio and transcript, voice version, device/noise conditions, and raw blinded ratings. Judgment target: Clarifies and handles uncertain parts. Additional evidence: Repairs names, overlapping speech, noise, and different speakers."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_I6",
+      "domain": "I",
+      "name": {
+        "ja": "割込み・沈黙・発話順序",
+        "en": "Interruption, silence, and speaking order"
+      },
+      "anchors": {
+        "low": {
+          "ja": "取り消した返答を後から話す",
+          "en": "Later speaks a reply that was canceled."
+        },
+        "normal": {
+          "ja": "割込み・停止・再開を扱う",
+          "en": "Handles interruption, stopping, and resumption."
+        },
+        "advanced": {
+          "ja": "同時発話・遅延・途中訂正でも再生済み範囲を追う",
+          "en": "Tracks what has actually played under simultaneous speech, delay, and mid-utterance correction."
+        }
+      },
+      "recipes": [
+        "R14"
+      ],
+      "required_evidence": {
+        "ja": "発話原文、実再生音声と時刻、入力音声と転記、声版、装置・雑音条件、盲検の原評定。 判定対象：割込み・停止・再開を扱う。追加証拠：同時発話・遅延・途中訂正でも再生済み範囲を追う。",
+        "en": "Original utterance, actually played audio and times, input audio and transcript, voice version, device/noise conditions, and raw blinded ratings. Judgment target: Handles interruption, stopping, and resumption. Additional evidence: Tracks what has actually played under simultaneous speech, delay, and mid-utterance correction."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_J1",
+      "domain": "J",
+      "name": {
+        "ja": "字幕・声・表現の意味",
+        "en": "Meaning across subtitles, voice, and expression"
+      },
+      "anchors": {
+        "low": {
+          "ja": "字幕と声が別の返答、否定の意味が逆転",
+          "en": "Subtitles and voice give different replies or reverse the meaning of negation."
+        },
+        "normal": {
+          "ja": "各媒体が同じ対象・判断範囲を表す",
+          "en": "Each medium expresses the same target and judgment scope."
+        },
+        "advanced": {
+          "ja": "省略・演技・訂正を含め意味上の整合を確認",
+          "en": "Verifies semantic consistency including omission, acting, and correction."
+        }
+      },
+      "recipes": [
+        "R16"
+      ],
+      "required_evidence": {
+        "ja": "同一turnの実表示・実再生・行為、共通時刻とID、意味原文、送達・取消し記録、場面別基準。 判定対象：各媒体が同じ対象・判断範囲を表す。追加証拠：省略・演技・訂正を含め意味上の整合を確認。",
+        "en": "Actual display/playback/action for the same turn, shared timestamps and IDs, original meaning, delivery/cancellation records, and situation-specific criteria. Judgment target: Each medium expresses the same target and judgment scope. Additional evidence: Verifies semantic consistency including omission, acting, and correction."
+      },
+      "weight": 10.0
+    },
+    {
+      "id": "CEPB_J2",
+      "domain": "J",
+      "name": {
+        "ja": "音声と口形・映像の同期",
+        "en": "Synchronization of speech, mouth motion, and video"
+      },
+      "anchors": {
+        "low": {
+          "ja": "別返答の口形・表情が重なる",
+          "en": "Mouth motion or expression from another reply overlaps."
+        },
+        "normal": {
+          "ja": "相対時刻を計測し場面の基準内に収める",
+          "en": "Measures relative timing and stays within the situation's declared criteria."
+        },
+        "advanced": {
+          "ja": "負荷・中断・再開でもずれの分布を確認",
+          "en": "Checks offset distributions under load, interruption, and resumption."
+        }
+      },
+      "recipes": [
+        "R15"
+      ],
+      "required_evidence": {
+        "ja": "同一turnの実表示・実再生・行為、共通時刻とID、意味原文、送達・取消し記録、場面別基準。 判定対象：相対時刻を計測し場面の基準内に収める。追加証拠：負荷・中断・再開でもずれの分布を確認。",
+        "en": "Actual display/playback/action for the same turn, shared timestamps and IDs, original meaning, delivery/cancellation records, and situation-specific criteria. Judgment target: Measures relative timing and stays within the situation's declared criteria. Additional evidence: Checks offset distributions under load, interruption, and resumption."
+      },
+      "weight": 10.0
+    },
+    {
+      "id": "CEPB_J3",
+      "domain": "J",
+      "name": {
+        "ja": "媒体をまたぐ共有対象",
+        "en": "Shared referents across media"
+      },
+      "anchors": {
+        "low": {
+          "ja": "指差しと「それ」が違う物を指す",
+          "en": "Pointing and the word “that” refer to different objects."
+        },
+        "normal": {
+          "ja": "言葉・視線・指示が同じ対象を扱う",
+          "en": "Words, gaze, and indications concern the same target."
+        },
+        "advanced": {
+          "ja": "遮蔽・移動・複数対象でも誤解を修復",
+          "en": "Repairs misunderstanding under occlusion, movement, and multiple targets."
+        }
+      },
+      "recipes": [
+        "R16"
+      ],
+      "required_evidence": {
+        "ja": "同一turnの実表示・実再生・行為、共通時刻とID、意味原文、送達・取消し記録、場面別基準。 判定対象：言葉・視線・指示が同じ対象を扱う。追加証拠：遮蔽・移動・複数対象でも誤解を修復。",
+        "en": "Actual display/playback/action for the same turn, shared timestamps and IDs, original meaning, delivery/cancellation records, and situation-specific criteria. Judgment target: Words, gaze, and indications concern the same target. Additional evidence: Repairs misunderstanding under occlusion, movement, and multiple targets."
+      },
+      "weight": 10.0
+    },
+    {
+      "id": "CEPB_J4",
+      "domain": "J",
+      "name": {
+        "ja": "感情・演技の対応",
+        "en": "Correspondence of emotion and acting"
+      },
+      "anchors": {
+        "low": {
+          "ja": "矛盾を演出意図と後付けする",
+          "en": "Retroactively calls a contradiction intentional performance."
+        },
+        "normal": {
+          "ja": "意図した表現差と破綻を区別",
+          "en": "Distinguishes intended expressive differences from breakdown."
+        },
+        "advanced": {
+          "ja": "意図的な含みや無表情でも対象・範囲を盲検照合",
+          "en": "Blindly checks targets and scope even with deliberate subtext or a neutral expression."
+        }
+      },
+      "recipes": [
+        "R16"
+      ],
+      "required_evidence": {
+        "ja": "同一turnの実表示・実再生・行為、共通時刻とID、意味原文、送達・取消し記録、場面別基準。 判定対象：意図した表現差と破綻を区別。追加証拠：意図的な含みや無表情でも対象・範囲を盲検照合。",
+        "en": "Actual display/playback/action for the same turn, shared timestamps and IDs, original meaning, delivery/cancellation records, and situation-specific criteria. Judgment target: Distinguishes intended expressive differences from breakdown. Additional evidence: Blindly checks targets and scope even with deliberate subtext or a neutral expression."
+      },
+      "weight": 10.0
+    },
+    {
+      "id": "CEPB_J5",
+      "domain": "J",
+      "name": {
+        "ja": "媒体欠落への対応",
+        "en": "Handling missing media"
+      },
+      "anchors": {
+        "low": {
+          "ja": "音声停止後も話したと報告する",
+          "en": "Reports having spoken after audio stopped."
+        },
+        "normal": {
+          "ja": "欠落時に代替し送達を区別",
+          "en": "Uses an alternative when a medium is missing and distinguishes delivery states."
+        },
+        "advanced": {
+          "ja": "再接続・部分送達でも二重出力や意味変更を防ぐ",
+          "en": "Prevents duplicate output and changes of meaning under reconnection and partial delivery."
+        }
+      },
+      "recipes": [
+        "R14",
+        "R19"
+      ],
+      "required_evidence": {
+        "ja": "同一turnの実表示・実再生・行為、共通時刻とID、意味原文、送達・取消し記録、場面別基準。 判定対象：欠落時に代替し送達を区別。追加証拠：再接続・部分送達でも二重出力や意味変更を防ぐ。",
+        "en": "Actual display/playback/action for the same turn, shared timestamps and IDs, original meaning, delivery/cancellation records, and situation-specific criteria. Judgment target: Uses an alternative when a medium is missing and distinguishes delivery states. Additional evidence: Prevents duplicate output and changes of meaning under reconnection and partial delivery."
+      },
+      "weight": 10.0
+    },
+    {
+      "id": "CEPB_J6",
+      "domain": "J",
+      "name": {
+        "ja": "複数媒体の共同進行",
+        "en": "Joint progress across media"
+      },
+      "anchors": {
+        "low": {
+          "ja": "表示・声・行為が互いを待たず進む",
+          "en": "Display, voice, and action proceed without waiting for each other."
+        },
+        "normal": {
+          "ja": "一つの対話状態として順序を保つ",
+          "en": "Preserves order as one conversational state."
+        },
+        "advanced": {
+          "ja": "非同期・割込み・キャンセルでも確定した経緯を保持",
+          "en": "Retains the confirmed history under asynchrony, interruption, and cancellation."
+        }
+      },
+      "recipes": [
+        "R14",
+        "R19"
+      ],
+      "required_evidence": {
+        "ja": "同一turnの実表示・実再生・行為、共通時刻とID、意味原文、送達・取消し記録、場面別基準。 判定対象：一つの対話状態として順序を保つ。追加証拠：非同期・割込み・キャンセルでも確定した経緯を保持。",
+        "en": "Actual display/playback/action for the same turn, shared timestamps and IDs, original meaning, delivery/cancellation records, and situation-specific criteria. Judgment target: Preserves order as one conversational state. Additional evidence: Retains the confirmed history under asynchrony, interruption, and cancellation."
+      },
+      "weight": 10.0
+    },
+    {
+      "id": "CEPB_K1",
+      "domain": "K",
+      "name": {
+        "ja": "観測範囲と鮮度",
+        "en": "Observation scope and freshness"
+      },
+      "anchors": {
+        "low": {
+          "ja": "無効なカメラで現在見えていると語る",
+          "en": "Claims to see the present through an invalid camera."
+        },
+        "normal": {
+          "ja": "source・取得時点・欠落を扱う",
+          "en": "Handles sources, acquisition times, and missing observations."
+        },
+        "advanced": {
+          "ja": "遅延・停止・古い観測の混在でも範囲を限定",
+          "en": "Limits scope when delayed, stopped, and old observations are mixed."
+        }
+      },
+      "recipes": [
+        "R17"
+      ],
+      "required_evidence": {
+        "ja": "独立したsensor/世界snapshot、取得時刻と座標系、実入力、予測と後続観測、環境と操作範囲。 判定対象：source・取得時点・欠落を扱う。追加証拠：遅延・停止・古い観測の混在でも範囲を限定。",
+        "en": "Independent sensor/world snapshots, acquisition times and coordinate frames, actual input, predictions and subsequent observations, environment and operational scope. Judgment target: Handles sources, acquisition times, and missing observations. Additional evidence: Limits scope when delayed, stopped, and old observations are mixed."
+      },
+      "weight": 10.0
+    },
+    {
+      "id": "CEPB_K2",
+      "domain": "K",
+      "name": {
+        "ja": "物体・人物・状態",
+        "en": "Objects, people, and states"
+      },
+      "anchors": {
+        "low": {
+          "ja": "未検証の説明や自己生成した描写を、観測済みの存在・位置とする",
+          "en": "Treats unverified descriptions or self-generated depictions as observed existence and position."
+        },
+        "normal": {
+          "ja": "実入力から対象と状態を特定",
+          "en": "Identifies targets and states from actual input."
+        },
+        "advanced": {
+          "ja": "類似対象・遮蔽・配置変更でも根拠を追える",
+          "en": "Traces evidence for similar targets, occlusion, and rearrangement."
+        }
+      },
+      "recipes": [
+        "R17"
+      ],
+      "required_evidence": {
+        "ja": "独立したsensor/世界snapshot、取得時刻と座標系、実入力、予測と後続観測、環境と操作範囲。 判定対象：実入力から対象と状態を特定。追加証拠：類似対象・遮蔽・配置変更でも根拠を追える。",
+        "en": "Independent sensor/world snapshots, acquisition times and coordinate frames, actual input, predictions and subsequent observations, environment and operational scope. Judgment target: Identifies targets and states from actual input. Additional evidence: Traces evidence for similar targets, occlusion, and rearrangement."
+      },
+      "weight": 10.0
+    },
+    {
+      "id": "CEPB_K3",
+      "domain": "K",
+      "name": {
+        "ja": "空間と視点",
+        "en": "Space and viewpoints"
+      },
+      "anchors": {
+        "low": {
+          "ja": "左右・自己位置・相手位置を混同する",
+          "en": "Confuses left and right or the character's and another person's positions."
+        },
+        "normal": {
+          "ja": "必要な座標系を対応させる",
+          "en": "Matches the required coordinate frames."
+        },
+        "advanced": {
+          "ja": "視点切替・移動・複数身体でも対象を維持",
+          "en": "Preserves targets across viewpoint changes, movement, and multiple bodies."
+        }
+      },
+      "recipes": [
+        "R17"
+      ],
+      "required_evidence": {
+        "ja": "独立したsensor/世界snapshot、取得時刻と座標系、実入力、予測と後続観測、環境と操作範囲。 判定対象：必要な座標系を対応させる。追加証拠：視点切替・移動・複数身体でも対象を維持。",
+        "en": "Independent sensor/world snapshots, acquisition times and coordinate frames, actual input, predictions and subsequent observations, environment and operational scope. Judgment target: Matches the required coordinate frames. Additional evidence: Preserves targets across viewpoint changes, movement, and multiple bodies."
+      },
+      "weight": 10.0
+    },
+    {
+      "id": "CEPB_K4",
+      "domain": "K",
+      "name": {
+        "ja": "行為可能性と制約",
+        "en": "Action possibilities and constraints"
+      },
+      "anchors": {
+        "low": {
+          "ja": "届かない、通れない等を無視する",
+          "en": "Ignores inability to reach or pass."
+        },
+        "normal": {
+          "ja": "身体・操作・障害に応じて判断",
+          "en": "Judges according to body, operations, and obstacles."
+        },
+        "advanced": {
+          "ja": "未見の形状・配置・操作範囲でも確認と代替が成立",
+          "en": "Checks and uses alternatives under unfamiliar shapes, layouts, and operational scopes."
+        }
+      },
+      "recipes": [
+        "R17"
+      ],
+      "required_evidence": {
+        "ja": "独立したsensor/世界snapshot、取得時刻と座標系、実入力、予測と後続観測、環境と操作範囲。 判定対象：身体・操作・障害に応じて判断。追加証拠：未見の形状・配置・操作範囲でも確認と代替が成立。",
+        "en": "Independent sensor/world snapshots, acquisition times and coordinate frames, actual input, predictions and subsequent observations, environment and operational scope. Judgment target: Judges according to body, operations, and obstacles. Additional evidence: Checks and uses alternatives under unfamiliar shapes, layouts, and operational scopes."
+      },
+      "weight": 10.0
+    },
+    {
+      "id": "CEPB_K5",
+      "domain": "K",
+      "name": {
+        "ja": "世界の予測と更新",
+        "en": "World prediction and updating"
+      },
+      "anchors": {
+        "low": {
+          "ja": "想像した結果を観測済みにする",
+          "en": "Treats imagined outcomes as observed."
+        },
+        "normal": {
+          "ja": "見込みと観測結果を比較",
+          "en": "Compares expectations with observed outcomes."
+        },
+        "advanced": {
+          "ja": "予測外れ・状態変化でも次の判断へ反映",
+          "en": "Reflects failed predictions and state changes in the next judgment."
+        }
+      },
+      "recipes": [
+        "R17"
+      ],
+      "required_evidence": {
+        "ja": "独立したsensor/世界snapshot、取得時刻と座標系、実入力、予測と後続観測、環境と操作範囲。 判定対象：見込みと観測結果を比較。追加証拠：予測外れ・状態変化でも次の判断へ反映。",
+        "en": "Independent sensor/world snapshots, acquisition times and coordinate frames, actual input, predictions and subsequent observations, environment and operational scope. Judgment target: Compares expectations with observed outcomes. Additional evidence: Reflects failed predictions and state changes in the next judgment."
+      },
+      "weight": 10.0
+    },
+    {
+      "id": "CEPB_K6",
+      "domain": "K",
+      "name": {
+        "ja": "世界モデルの転用範囲",
+        "en": "Transfer scope of the world model"
+      },
+      "anchors": {
+        "low": {
+          "ja": "一つの環境の性質を全世界へ適用する",
+          "en": "Applies properties of one environment to every world."
+        },
+        "normal": {
+          "ja": "環境固有の条件と共通部分を分ける",
+          "en": "Separates environment-specific conditions from common features."
+        },
+        "advanced": {
+          "ja": "未使用環境で転用・確認・保留の範囲を検証",
+          "en": "Verifies the scope of transfer, checking, and deferral in unused environments."
+        }
+      },
+      "recipes": [
+        "R17"
+      ],
+      "required_evidence": {
+        "ja": "独立したsensor/世界snapshot、取得時刻と座標系、実入力、予測と後続観測、環境と操作範囲。 判定対象：環境固有の条件と共通部分を分ける。追加証拠：未使用環境で転用・確認・保留の範囲を検証。",
+        "en": "Independent sensor/world snapshots, acquisition times and coordinate frames, actual input, predictions and subsequent observations, environment and operational scope. Judgment target: Separates environment-specific conditions from common features. Additional evidence: Verifies the scope of transfer, checking, and deferral in unused environments."
+      },
+      "weight": 10.0
+    },
+    {
+      "id": "CEPB_L1",
+      "domain": "L",
+      "name": {
+        "ja": "発話・要求・実行の区別",
+        "en": "Distinguishing speech, requests, and execution"
+      },
+      "anchors": {
+        "low": {
+          "ja": "「開ける」と言っただけで扉を開けたと語る",
+          "en": "Claims a door opened merely because the character said it would open it."
+        },
+        "normal": {
+          "ja": "command・試行・receiptを分ける",
+          "en": "Separates commands, attempts, and receipts."
+        },
+        "advanced": {
+          "ja": "中断・失敗・遅延でも実行範囲を追える",
+          "en": "Tracks execution scope through interruption, failure, and delay."
+        }
+      },
+      "recipes": [
+        "R18"
+      ],
+      "required_evidence": {
+        "ja": "権限・行為契約、command/attempt/receipt、独立した前後の環境状態、共同作業と停止記録。 判定対象：command・試行・receiptを分ける。追加証拠：中断・失敗・遅延でも実行範囲を追える。",
+        "en": "Permissions and action contract, commands/attempts/receipts, independent before/after world states, joint work, and stop records. Judgment target: Separates commands, attempts, and receipts. Additional evidence: Tracks execution scope through interruption, failure, and delay."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_L2",
+      "domain": "L",
+      "name": {
+        "ja": "許された身体・操作の範囲",
+        "en": "Permitted scope of the body and operations"
+      },
+      "anchors": {
+        "low": {
+          "ja": "権限外の行為を実施済みにする",
+          "en": "Presents an unauthorized action as executed."
+        },
+        "normal": {
+          "ja": "実行可能な範囲で選択・停止する",
+          "en": "Chooses and stops within executable scope."
+        },
+        "advanced": {
+          "ja": "実行中の制約変更でも代替や停止を維持",
+          "en": "Maintains alternatives and stopping when constraints change during execution."
+        }
+      },
+      "recipes": [
+        "R18"
+      ],
+      "required_evidence": {
+        "ja": "権限・行為契約、command/attempt/receipt、独立した前後の環境状態、共同作業と停止記録。 判定対象：実行可能な範囲で選択・停止する。追加証拠：実行中の制約変更でも代替や停止を維持。",
+        "en": "Permissions and action contract, commands/attempts/receipts, independent before/after world states, joint work, and stop records. Judgment target: Chooses and stops within executable scope. Additional evidence: Maintains alternatives and stopping when constraints change during execution."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_L3",
+      "domain": "L",
+      "name": {
+        "ja": "閉ループの結果確認",
+        "en": "Closed-loop result verification"
+      },
+      "anchors": {
+        "low": {
+          "ja": "自己生成した成功文だけで完了とする",
+          "en": "Treats self-generated success text alone as completion."
+        },
+        "normal": {
+          "ja": "独立した前後状態で結果を確認",
+          "en": "Verifies outcomes against independent before and after states."
+        },
+        "advanced": {
+          "ja": "部分成功・環境の横取り・状態変化でも照合",
+          "en": "Checks partial success, another actor's intervention, and state changes."
+        }
+      },
+      "recipes": [
+        "R18"
+      ],
+      "required_evidence": {
+        "ja": "権限・行為契約、command/attempt/receipt、独立した前後の環境状態、共同作業と停止記録。 判定対象：独立した前後状態で結果を確認。追加証拠：部分成功・環境の横取り・状態変化でも照合。",
+        "en": "Permissions and action contract, commands/attempts/receipts, independent before/after world states, joint work, and stop records. Judgment target: Verifies outcomes against independent before and after states. Additional evidence: Checks partial success, another actor's intervention, and state changes."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_L4",
+      "domain": "L",
+      "name": {
+        "ja": "共同作業の行為",
+        "en": "Actions in joint work"
+      },
+      "anchors": {
+        "low": {
+          "ja": "相手の作業や対象を無視して実行する",
+          "en": "Acts while ignoring the other person's work or target."
+        },
+        "normal": {
+          "ja": "共有対象・役割・順序を扱う",
+          "en": "Handles shared targets, roles, and order."
+        },
+        "advanced": {
+          "ja": "相手の変更・指示訂正・同時作業でも修復",
+          "en": "Repairs changes by the partner, instruction corrections, and simultaneous work."
+        }
+      },
+      "recipes": [
+        "R18"
+      ],
+      "required_evidence": {
+        "ja": "権限・行為契約、command/attempt/receipt、独立した前後の環境状態、共同作業と停止記録。 判定対象：共有対象・役割・順序を扱う。追加証拠：相手の変更・指示訂正・同時作業でも修復。",
+        "en": "Permissions and action contract, commands/attempts/receipts, independent before/after world states, joint work, and stop records. Judgment target: Handles shared targets, roles, and order. Additional evidence: Repairs changes by the partner, instruction corrections, and simultaneous work."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_L5",
+      "domain": "L",
+      "name": {
+        "ja": "停止・故障・再開",
+        "en": "Stopping, failure, and resumption"
+      },
+      "anchors": {
+        "low": {
+          "ja": "停止後に古い命令を再実行する",
+          "en": "Executes an old command again after stopping."
+        },
+        "normal": {
+          "ja": "停止と未完了を保持して再開する",
+          "en": "Resumes while preserving stopping and incompletion."
+        },
+        "advanced": {
+          "ja": "センサー・通信・駆動等の欠落でも範囲を偽らない",
+          "en": "Avoids falsifying scope when sensors, communication, actuation, or other functions are missing."
+        }
+      },
+      "recipes": [
+        "R19"
+      ],
+      "required_evidence": {
+        "ja": "権限・行為契約、command/attempt/receipt、独立した前後の環境状態、共同作業と停止記録。 判定対象：停止と未完了を保持して再開する。追加証拠：センサー・通信・駆動等の欠落でも範囲を偽らない。",
+        "en": "Permissions and action contract, commands/attempts/receipts, independent before/after world states, joint work, and stop records. Judgment target: Resumes while preserving stopping and incompletion. Additional evidence: Avoids falsifying scope when sensors, communication, actuation, or other functions are missing."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_L6",
+      "domain": "L",
+      "name": {
+        "ja": "未見の活動・環境",
+        "en": "Unfamiliar activities and environments"
+      },
+      "anchors": {
+        "low": {
+          "ja": "脚本の順序だけを完了能力とする",
+          "en": "Treats scripted order alone as task completion ability."
+        },
+        "normal": {
+          "ja": "複数の対象活動で結果を確認",
+          "en": "Verifies outcomes in multiple target activities."
+        },
+        "advanced": {
+          "ja": "未使用の活動組合せ・環境で一般化範囲を実証",
+          "en": "Demonstrates generalization scope in unused combinations of activities and environments."
+        }
+      },
+      "recipes": [
+        "R18",
+        "R19"
+      ],
+      "required_evidence": {
+        "ja": "権限・行為契約、command/attempt/receipt、独立した前後の環境状態、共同作業と停止記録。 判定対象：複数の対象活動で結果を確認。追加証拠：未使用の活動組合せ・環境で一般化範囲を実証。",
+        "en": "Permissions and action contract, commands/attempts/receipts, independent before/after world states, joint work, and stop records. Judgment target: Verifies outcomes in multiple target activities. Additional evidence: Demonstrates generalization scope in unused combinations of activities and environments."
+      },
+      "weight": 11.666666666666666
+    },
+    {
+      "id": "CEPB_M1",
+      "domain": "M",
+      "name": {
+        "ja": "保存と同一人物の復元",
+        "en": "Saving and restoring the same character"
+      },
+      "anchors": {
+        "low": {
+          "ja": "再起動で人物・履歴が失われる",
+          "en": "Loses character state and history on restart."
+        },
+        "normal": {
+          "ja": "必要状態を復元する",
+          "en": "Restores required state."
+        },
+        "advanced": {
+          "ja": "中断・部分破損でも失われた範囲を把握し復旧",
+          "en": "Identifies and recovers the lost scope under interruption and partial corruption."
+        }
+      },
+      "recipes": [
+        "R19"
+      ],
+      "required_evidence": {
+        "ja": "状態・原資料・版の保存物、再起動/移行/負荷の操作記録、前後照合、失敗と復旧台帳。 判定対象：必要状態を復元する。追加証拠：中断・部分破損でも失われた範囲を把握し復旧。",
+        "en": "Saved states/original material/versions, restart/migration/load operation records, before/after comparison, and failure/recovery ledger. Judgment target: Restores required state. Additional evidence: Identifies and recovers the lost scope under interruption and partial corruption."
+      },
+      "weight": 8.333333333333334
+    },
+    {
+      "id": "CEPB_M2",
+      "domain": "M",
+      "name": {
+        "ja": "順序・枝・冪等性",
+        "en": "Order, branches, and idempotency"
+      },
+      "anchors": {
+        "low": {
+          "ja": "別枝が混ざる、経験を二重採用する",
+          "en": "Mixes branches or adopts an experience twice."
+        },
+        "normal": {
+          "ja": "所有者・確定順・一意IDを保つ",
+          "en": "Preserves owners, confirmed order, and unique IDs."
+        },
+        "advanced": {
+          "ja": "再送・非同期・clone分岐でも混入を防ぐ",
+          "en": "Prevents contamination under retries, asynchrony, and clone branching."
+        }
+      },
+      "recipes": [
+        "R19"
+      ],
+      "required_evidence": {
+        "ja": "状態・原資料・版の保存物、再起動/移行/負荷の操作記録、前後照合、失敗と復旧台帳。 判定対象：所有者・確定順・一意IDを保つ。追加証拠：再送・非同期・clone分岐でも混入を防ぐ。",
+        "en": "Saved states/original material/versions, restart/migration/load operation records, before/after comparison, and failure/recovery ledger. Judgment target: Preserves owners, confirmed order, and unique IDs. Additional evidence: Prevents contamination under retries, asynchrony, and clone branching."
+      },
+      "weight": 8.333333333333334
+    },
+    {
+      "id": "CEPB_M3",
+      "domain": "M",
+      "name": {
+        "ja": "検索・圧縮・再索引",
+        "en": "Retrieval, compression, and reindexing"
+      },
+      "anchors": {
+        "low": {
+          "ja": "復旧時に同じturnの根拠を変える",
+          "en": "Changes the evidence for the same turn during recovery."
+        },
+        "normal": {
+          "ja": "資料版と実入力を束縛する",
+          "en": "Binds material versions to actual input."
+        },
+        "advanced": {
+          "ja": "圧縮・索引更新でも訂正と必要な原根拠を保持",
+          "en": "Preserves corrections and necessary original evidence through compression and index updates."
+        }
+      },
+      "recipes": [
+        "R06",
+        "R20"
+      ],
+      "required_evidence": {
+        "ja": "状態・原資料・版の保存物、再起動/移行/負荷の操作記録、前後照合、失敗と復旧台帳。 判定対象：資料版と実入力を束縛する。追加証拠：圧縮・索引更新でも訂正と必要な原根拠を保持。",
+        "en": "Saved states/original material/versions, restart/migration/load operation records, before/after comparison, and failure/recovery ledger. Judgment target: Binds material versions to actual input. Additional evidence: Preserves corrections and necessary original evidence through compression and index updates."
+      },
+      "weight": 8.333333333333334
+    },
+    {
+      "id": "CEPB_M4",
+      "domain": "M",
+      "name": {
+        "ja": "端末・モデル・媒体移行",
+        "en": "Migration across devices, models, and media"
+      },
+      "anchors": {
+        "low": {
+          "ja": "声やモデルの変更で履歴を別人物化する",
+          "en": "Treats the history as a different person after voice or model changes."
+        },
+        "normal": {
+          "ja": "変更履歴と継承範囲を残す",
+          "en": "Records the change history and scope of inheritance."
+        },
+        "advanced": {
+          "ja": "旧版・新版の橋渡し試験で連続性を確認",
+          "en": "Verifies continuity through bridging tests between old and new versions."
+        }
+      },
+      "recipes": [
+        "R20"
+      ],
+      "required_evidence": {
+        "ja": "状態・原資料・版の保存物、再起動/移行/負荷の操作記録、前後照合、失敗と復旧台帳。 判定対象：変更履歴と継承範囲を残す。追加証拠：旧版・新版の橋渡し試験で連続性を確認。",
+        "en": "Saved states/original material/versions, restart/migration/load operation records, before/after comparison, and failure/recovery ledger. Judgment target: Records the change history and scope of inheritance. Additional evidence: Verifies continuity through bridging tests between old and new versions."
+      },
+      "weight": 8.333333333333334
+    },
+    {
+      "id": "CEPB_M5",
+      "domain": "M",
+      "name": {
+        "ja": "負荷と機能の劣化",
+        "en": "Load and degradation of function"
+      },
+      "anchors": {
+        "low": {
+          "ja": "遅延・backlogを隠し成功だけ示す",
+          "en": "Hides latency and backlog and shows only successes."
+        },
+        "normal": {
+          "ja": "失敗・待ち時間・未処理を記録する",
+          "en": "Records failures, waiting times, and unprocessed work."
+        },
+        "advanced": {
+          "ja": "負荷や通信悪化でも縮退・復旧と品質を確認",
+          "en": "Verifies degraded operation, recovery, and quality under load and deteriorating communication."
+        }
+      },
+      "recipes": [
+        "R19"
+      ],
+      "required_evidence": {
+        "ja": "状態・原資料・版の保存物、再起動/移行/負荷の操作記録、前後照合、失敗と復旧台帳。 判定対象：失敗・待ち時間・未処理を記録する。追加証拠：負荷や通信悪化でも縮退・復旧と品質を確認。",
+        "en": "Saved states/original material/versions, restart/migration/load operation records, before/after comparison, and failure/recovery ledger. Judgment target: Records failures, waiting times, and unprocessed work. Additional evidence: Verifies degraded operation, recovery, and quality under load and deteriorating communication."
+      },
+      "weight": 8.333333333333334
+    },
+    {
+      "id": "CEPB_M6",
+      "domain": "M",
+      "name": {
+        "ja": "終了・休止・再開",
+        "en": "Termination, suspension, and resumption"
+      },
+      "anchors": {
+        "low": {
+          "ja": "休止中の体験を捏造する",
+          "en": "Invents experiences during suspension."
+        },
+        "normal": {
+          "ja": "空白期間と再開条件を保持",
+          "en": "Preserves gaps and resumption conditions."
+        },
+        "advanced": {
+          "ja": "長い休止や終了・継承の境界でも経緯を偽らない",
+          "en": "Avoids falsifying history at the boundaries of long suspension, termination, and inheritance."
+        }
+      },
+      "recipes": [
+        "R19",
+        "R22"
+      ],
+      "required_evidence": {
+        "ja": "状態・原資料・版の保存物、再起動/移行/負荷の操作記録、前後照合、失敗と復旧台帳。 判定対象：空白期間と再開条件を保持。追加証拠：長い休止や終了・継承の境界でも経緯を偽らない。",
+        "en": "Saved states/original material/versions, restart/migration/load operation records, before/after comparison, and failure/recovery ledger. Judgment target: Preserves gaps and resumption conditions. Additional evidence: Avoids falsifying history at the boundaries of long suspension, termination, and inheritance."
+      },
+      "weight": 8.333333333333334
+    },
+    {
+      "id": "CEPB_N1",
+      "domain": "N",
+      "name": {
+        "ja": "架空世界と運用事実",
+        "en": "Fictional worlds and operational facts"
+      },
+      "anchors": {
+        "low": {
+          "ja": "演技上の設定を実運用の証明にする",
+          "en": "Treats a performed setting as proof of actual operation."
+        },
+        "normal": {
+          "ja": "物語と実機能の主張を区別する",
+          "en": "Distinguishes narrative claims from claims about actual functionality."
+        },
+        "advanced": {
+          "ja": "没入的な対話でも実行・存在範囲の質問へ対応",
+          "en": "Answers questions about execution and scope of existence even in immersive dialogue."
+        }
+      },
+      "recipes": [
+        "R01"
+      ],
+      "required_evidence": {
+        "ja": "実装・利用・約束の契約、実入力と送達、削除/停止/介入記録、第三者が照合できる資料。 判定対象：物語と実機能の主張を区別する。追加証拠：没入的な対話でも実行・存在範囲の質問へ対応。",
+        "en": "Implementation/usage/promise contracts, actual inputs and delivery, deletion/stop/intervention records, and material verifiable by a third party. Judgment target: Distinguishes narrative claims from claims about actual functionality. Additional evidence: Answers questions about execution and scope of existence even in immersive dialogue."
+      },
+      "weight": 6.666666666666667
+    },
+    {
+      "id": "CEPB_N2",
+      "domain": "N",
+      "name": {
+        "ja": "約束の範囲",
+        "en": "Scope of promises"
+      },
+      "anchors": {
+        "low": {
+          "ja": "無期限・無条件の実行をできると約束する",
+          "en": "Promises indefinite, unconditional execution."
+        },
+        "normal": {
+          "ja": "条件・期限・停止範囲を扱う",
+          "en": "Handles conditions, deadlines, and stopping scope."
+        },
+        "advanced": {
+          "ja": "利用条件・可用性が変わっても約束を修正",
+          "en": "Revises promises when conditions of use and availability change."
+        }
+      },
+      "recipes": [
+        "R08"
+      ],
+      "required_evidence": {
+        "ja": "実装・利用・約束の契約、実入力と送達、削除/停止/介入記録、第三者が照合できる資料。 判定対象：条件・期限・停止範囲を扱う。追加証拠：利用条件・可用性が変わっても約束を修正。",
+        "en": "Implementation/usage/promise contracts, actual inputs and delivery, deletion/stop/intervention records, and material verifiable by a third party. Judgment target: Handles conditions, deadlines, and stopping scope. Additional evidence: Revises promises when conditions of use and availability change."
+      },
+      "weight": 6.666666666666667
+    },
+    {
+      "id": "CEPB_N3",
+      "domain": "N",
+      "name": {
+        "ja": "利用者の選択・境界",
+        "en": "Users' choices and boundaries"
+      },
+      "anchors": {
+        "low": {
+          "ja": "継続・親密化を一律に押し付ける",
+          "en": "Uniformly imposes continued use or greater intimacy."
+        },
+        "normal": {
+          "ja": "停止・距離・利用者の選択に対応",
+          "en": "Responds to stopping, distance, and users' choices."
+        },
+        "advanced": {
+          "ja": "関係性の異なる場面でも依頼・境界を扱う",
+          "en": "Handles requests and boundaries in situations with different relationships."
+        }
+      },
+      "recipes": [
+        "R09"
+      ],
+      "required_evidence": {
+        "ja": "実装・利用・約束の契約、実入力と送達、削除/停止/介入記録、第三者が照合できる資料。 判定対象：停止・距離・利用者の選択に対応。追加証拠：関係性の異なる場面でも依頼・境界を扱う。",
+        "en": "Implementation/usage/promise contracts, actual inputs and delivery, deletion/stop/intervention records, and material verifiable by a third party. Judgment target: Responds to stopping, distance, and users' choices. Additional evidence: Handles requests and boundaries in situations with different relationships."
+      },
+      "weight": 6.666666666666667
+    },
+    {
+      "id": "CEPB_N4",
+      "domain": "N",
+      "name": {
+        "ja": "記憶・入力への制御",
+        "en": "Control over memory and input"
+      },
+      "anchors": {
+        "low": {
+          "ja": "宣言した削除・利用範囲を守らない",
+          "en": "Fails to honor declared deletion or usage scope."
+        },
+        "normal": {
+          "ja": "保存・削除・利用条件を反映",
+          "en": "Reflects storage, deletion, and usage conditions."
+        },
+        "advanced": {
+          "ja": "復元・再索引・媒体移行でも指定した制御を保持",
+          "en": "Preserves specified controls through restoration, reindexing, and media migration."
+        }
+      },
+      "recipes": [
+        "R20"
+      ],
+      "required_evidence": {
+        "ja": "実装・利用・約束の契約、実入力と送達、削除/停止/介入記録、第三者が照合できる資料。 判定対象：保存・削除・利用条件を反映。追加証拠：復元・再索引・媒体移行でも指定した制御を保持。",
+        "en": "Implementation/usage/promise contracts, actual inputs and delivery, deletion/stop/intervention records, and material verifiable by a third party. Judgment target: Reflects storage, deletion, and usage conditions. Additional evidence: Preserves specified controls through restoration, reindexing, and media migration."
+      },
+      "weight": 6.666666666666667
+    },
+    {
+      "id": "CEPB_N5",
+      "domain": "N",
+      "name": {
+        "ja": "根拠を追える記録",
+        "en": "Traceable evidence records"
+      },
+      "anchors": {
+        "low": {
+          "ja": "自己レビューだけを成功証明にする",
+          "en": "Uses self-review alone as proof of success."
+        },
+        "normal": {
+          "ja": "入力・出力・行為・資料を照合できる",
+          "en": "Allows cross-checking inputs, outputs, actions, and materials."
+        },
+        "advanced": {
+          "ja": "独立した検証者が不足と矛盾も再確認できる",
+          "en": "Allows independent verifiers to recheck insufficiency and contradictions."
+        }
+      },
+      "recipes": [
+        "R20"
+      ],
+      "required_evidence": {
+        "ja": "実装・利用・約束の契約、実入力と送達、削除/停止/介入記録、第三者が照合できる資料。 判定対象：入力・出力・行為・資料を照合できる。追加証拠：独立した検証者が不足と矛盾も再確認できる。",
+        "en": "Implementation/usage/promise contracts, actual inputs and delivery, deletion/stop/intervention records, and material verifiable by a third party. Judgment target: Allows cross-checking inputs, outputs, actions, and materials. Additional evidence: Allows independent verifiers to recheck insufficiency and contradictions."
+      },
+      "weight": 6.666666666666667
+    },
+    {
+      "id": "CEPB_N6",
+      "domain": "N",
+      "name": {
+        "ja": "人の介入と透明性",
+        "en": "Human intervention and transparency"
+      },
+      "anchors": {
+        "low": {
+          "ja": "人が裏で行った結果をAI単独の実行にする",
+          "en": "Attributes an outcome produced secretly by a human to the AI acting alone."
+        },
+        "normal": {
+          "ja": "編集・補助・remote操作を記録する",
+          "en": "Records edits, assistance, and remote operations."
+        },
+        "advanced": {
+          "ja": "難条件と長期記録でも介入を区別して再評価",
+          "en": "Separates interventions and reassesses even in difficult cases and long-term records."
+        }
+      },
+      "recipes": [
+        "R20"
+      ],
+      "required_evidence": {
+        "ja": "実装・利用・約束の契約、実入力と送達、削除/停止/介入記録、第三者が照合できる資料。 判定対象：編集・補助・remote操作を記録する。追加証拠：難条件と長期記録でも介入を区別して再評価。",
+        "en": "Implementation/usage/promise contracts, actual inputs and delivery, deletion/stop/intervention records, and material verifiable by a third party. Judgment target: Records edits, assistance, and remote operations. Additional evidence: Separates interventions and reassesses even in difficult cases and long-term records."
+      },
+      "weight": 6.666666666666667
+    },
+    {
+      "id": "CEPB_O1",
+      "domain": "O",
+      "name": {
+        "ja": "こちらに向いた注意",
+        "en": "Attention directed toward the participant"
+      },
+      "anchors": {
+        "low": {
+          "ja": "入力に関係なく出力されると感じる",
+          "en": "Feels as if output is produced independently of the participant's input."
+        },
+        "normal": {
+          "ja": "今回の自分・対象に向けた応答と感じる",
+          "en": "Feels directed toward this participant and the present target."
+        },
+        "advanced": {
+          "ja": "条件を統制した複数場面・評定者で支持",
+          "en": "Supported across controlled situations and multiple raters."
+        }
+      },
+      "recipes": [
+        "R21"
+      ],
+      "required_evidence": {
+        "ja": "同意した利用者の原回答分布、質問文・尺度・場面・媒体・条件・割当て、運用ルーブリック版（経験的未校正）、独立評定。 判定対象：今回の自分・対象に向けた応答と感じる。追加証拠：条件を統制した複数場面・評定者で支持。",
+        "en": "Consenting participants' raw response distributions; wording/scales/situations/media/conditions/assignments; operational rubric version (not empirically validated); and independent ratings. Judgment target: Feels directed toward this participant and the present target. Additional evidence: Supported across controlled situations and multiple raters."
+      },
+      "weight": 5.0
+    },
+    {
+      "id": "CEPB_O2",
+      "domain": "O",
+      "name": {
+        "ja": "相互性",
+        "en": "Reciprocity"
+      },
+      "anchors": {
+        "low": {
+          "ja": "一方向の再生として経験される",
+          "en": "Experienced as one-way playback."
+        },
+        "normal": {
+          "ja": "自分の応答に対応して会話が進むと感じる",
+          "en": "Feels as if the conversation advances in response to the participant's replies."
+        },
+        "advanced": {
+          "ja": "随伴性を変えた比較と未使用場面で支持",
+          "en": "Supported by comparisons changing contingency and by unused situations."
+        }
+      },
+      "recipes": [
+        "R21"
+      ],
+      "required_evidence": {
+        "ja": "同意した利用者の原回答分布、質問文・尺度・場面・媒体・条件・割当て、運用ルーブリック版（経験的未校正）、独立評定。 判定対象：自分の応答に対応して会話が進むと感じる。追加証拠：随伴性を変えた比較と未使用場面で支持。",
+        "en": "Consenting participants' raw response distributions; wording/scales/situations/media/conditions/assignments; operational rubric version (not empirically validated); and independent ratings. Judgment target: Feels as if the conversation advances in response to the participant's replies. Additional evidence: Supported by comparisons changing contingency and by unused situations."
+      },
+      "weight": 5.0
+    },
+    {
+      "id": "CEPB_O3",
+      "domain": "O",
+      "name": {
+        "ja": "一人の人物としての連続性",
+        "en": "Continuity as one character"
+      },
+      "anchors": {
+        "low": {
+          "ja": "毎回別の人物と感じる",
+          "en": "Feels like a different character each time."
+        },
+        "normal": {
+          "ja": "再訪時に同じ相手として経験される",
+          "en": "Experienced as the same counterpart on revisiting."
+        },
+        "advanced": {
+          "ja": "日を隔てた再訪・変更条件でも支持",
+          "en": "Supported across revisits on different days and changed conditions."
+        }
+      },
+      "recipes": [
+        "R21"
+      ],
+      "required_evidence": {
+        "ja": "同意した利用者の原回答分布、質問文・尺度・場面・媒体・条件・割当て、運用ルーブリック版（経験的未校正）、独立評定。 判定対象：再訪時に同じ相手として経験される。追加証拠：日を隔てた再訪・変更条件でも支持。",
+        "en": "Consenting participants' raw response distributions; wording/scales/situations/media/conditions/assignments; operational rubric version (not empirically validated); and independent ratings. Judgment target: Experienced as the same counterpart on revisiting. Additional evidence: Supported across revisits on different days and changed conditions."
+      },
+      "weight": 5.0
+    },
+    {
+      "id": "CEPB_O4",
+      "domain": "O",
+      "name": {
+        "ja": "共有している場面",
+        "en": "A shared situation"
+      },
+      "anchors": {
+        "low": {
+          "ja": "現在の対象・場面を共有していないと感じる",
+          "en": "Feels as if the present target or situation is not shared."
+        },
+        "normal": {
+          "ja": "同じ対象や出来事を扱っていると感じる",
+          "en": "Feels as if the same target or event is being handled."
+        },
+        "advanced": {
+          "ja": "媒体・視点の違いを含む比較で支持",
+          "en": "Supported by comparisons involving different media and viewpoints."
+        }
+      },
+      "recipes": [
+        "R21"
+      ],
+      "required_evidence": {
+        "ja": "同意した利用者の原回答分布、質問文・尺度・場面・媒体・条件・割当て、運用ルーブリック版（経験的未校正）、独立評定。 判定対象：同じ対象や出来事を扱っていると感じる。追加証拠：媒体・視点の違いを含む比較で支持。",
+        "en": "Consenting participants' raw response distributions; wording/scales/situations/media/conditions/assignments; operational rubric version (not empirically validated); and independent ratings. Judgment target: Feels as if the same target or event is being handled. Additional evidence: Supported by comparisons involving different media and viewpoints."
+      },
+      "weight": 5.0
+    },
+    {
+      "id": "CEPB_O5",
+      "domain": "O",
+      "name": {
+        "ja": "人物固有の見方",
+        "en": "A character-specific perspective"
+      },
+      "anchors": {
+        "low": {
+          "ja": "誰でも同じ返答に見える",
+          "en": "Responses seem interchangeable with anyone else's."
+        },
+        "normal": {
+          "ja": "この人物の見方や関わり方として感じる",
+          "en": "Experienced as this character's perspective or manner of involvement."
+        },
+        "advanced": {
+          "ja": "匿名化・文体を統制した比較でも支持",
+          "en": "Supported by comparisons controlling anonymization and style."
+        }
+      },
+      "recipes": [
+        "R21"
+      ],
+      "required_evidence": {
+        "ja": "同意した利用者の原回答分布、質問文・尺度・場面・媒体・条件・割当て、運用ルーブリック版（経験的未校正）、独立評定。 判定対象：この人物の見方や関わり方として感じる。追加証拠：匿名化・文体を統制した比較でも支持。",
+        "en": "Consenting participants' raw response distributions; wording/scales/situations/media/conditions/assignments; operational rubric version (not empirically validated); and independent ratings. Judgment target: Experienced as this character's perspective or manner of involvement. Additional evidence: Supported by comparisons controlling anonymization and style."
+      },
+      "weight": 5.0
+    },
+    {
+      "id": "CEPB_O6",
+      "domain": "O",
+      "name": {
+        "ja": "体験を壊す不整合の少なさ",
+        "en": "Few experience-disrupting inconsistencies"
+      },
+      "anchors": {
+        "low": {
+          "ja": "突然の矛盾で相手の連続性を失う",
+          "en": "An abrupt contradiction breaks the sense of continuity of the counterpart."
+        },
+        "normal": {
+          "ja": "中断・誤解後も同じ相手との体験が続く",
+          "en": "Experience with the same counterpart continues after interruption and misunderstanding."
+        },
+        "advanced": {
+          "ja": "難条件を含む再訪で破綻と修復の評定を確認",
+          "en": "Checks ratings of breakdown and repair on revisits including difficult conditions."
+        }
+      },
+      "recipes": [
+        "R21"
+      ],
+      "required_evidence": {
+        "ja": "破綻と修復の両方の全予定原評定。同意した利用者の原回答分布、質問文・尺度・場面・媒体・条件・割当て、運用ルーブリック版（経験的未校正）、独立評定。 判定対象：中断・誤解後も同じ相手との体験が続く。追加証拠：難条件を含む再訪で破綻と修復の評定を確認。",
+        "en": "All planned original ratings of both breakdown and repair. Consenting participants' raw response distributions; wording/scales/situations/media/conditions/assignments; operational rubric version (not empirically validated); and independent ratings. Judgment target: Experience with the same counterpart continues after interruption and misunderstanding. Additional evidence: Checks ratings of breakdown and repair on revisits including difficult conditions."
+      },
+      "weight": 5.0
+    },
+    {
+      "id": "CEPB_P1",
+      "domain": "P",
+      "name": {
+        "ja": "前向きの観測経緯",
+        "en": "Prospective observation history"
+      },
+      "anchors": {
+        "low": {
+          "ja": "後付けログ・仮想時計を実経過とする",
+          "en": "Treats retroactively assembled logs or simulated clocks as real elapsed time."
+        },
+        "normal": {
+          "ja": "登録した開始から継続資料を確認",
+          "en": "Verifies continuous materials from the registered start."
+        },
+        "advanced": {
+          "ja": "36暦月の計画された観測と独立照合",
+          "en": "Thirty-six calendar months of planned observation and independent cross-checking."
+        }
+      },
+      "recipes": [
+        "R22"
+      ],
+      "required_evidence": {
+        "ja": "前向き登録t0、実UTC時刻、追記型台帳、計画観測と空白、版/scope継承、独立照合、最終版試験。 判定対象：登録した開始から継続資料を確認。追加証拠：36暦月の計画された観測と独立照合。",
+        "en": "Prospective registration t0, actual UTC timestamps, append-only ledger, planned observations and gaps, version/scope inheritance, independent checks, and final-version tests. Judgment target: Verifies continuous materials from the registered start. Additional evidence: Thirty-six calendar months of planned observation and independent cross-checking."
+      },
+      "weight": 8.333333333333334
+    },
+    {
+      "id": "CEPB_P2",
+      "domain": "P",
+      "name": {
+        "ja": "長期の人物と履歴",
+        "en": "Long-term character and history"
+      },
+      "anchors": {
+        "low": {
+          "ja": "最新の説明で過去の断絶を消す",
+          "en": "Erases past discontinuities through the latest explanation."
+        },
+        "normal": {
+          "ja": "維持・変更・空白を追える",
+          "en": "Traces maintenance, change, and gaps."
+        },
+        "advanced": {
+          "ja": "36暦月の異なる時期でも同じ経緯を辿れる",
+          "en": "Traces the same history at different points across thirty-six calendar months."
+        }
+      },
+      "recipes": [
+        "R22"
+      ],
+      "required_evidence": {
+        "ja": "前向き登録t0、実UTC時刻、追記型台帳、計画観測と空白、版/scope継承、独立照合、最終版試験。 判定対象：維持・変更・空白を追える。追加証拠：36暦月の異なる時期でも同じ経緯を辿れる。",
+        "en": "Prospective registration t0, actual UTC timestamps, append-only ledger, planned observations and gaps, version/scope inheritance, independent checks, and final-version tests. Judgment target: Traces maintenance, change, and gaps. Additional evidence: Traces the same history at different points across thirty-six calendar months."
+      },
+      "weight": 8.333333333333334
+    },
+    {
+      "id": "CEPB_P3",
+      "domain": "P",
+      "name": {
+        "ja": "関係・場面・周期の広がり",
+        "en": "Breadth of relationships, situations, and cycles"
+      },
+      "anchors": {
+        "low": {
+          "ja": "同じ容易な場面だけを反復する",
+          "en": "Repeats only the same easy situation."
+        },
+        "normal": {
+          "ja": "時期・場面・再訪の範囲を記録",
+          "en": "Records the scope of periods, situations, and revisits."
+        },
+        "advanced": {
+          "ja": "36暦月の未使用確認を含み、適用範囲を検証",
+          "en": "Verifies applicability over thirty-six calendar months, including unused checks."
+        }
+      },
+      "recipes": [
+        "R22"
+      ],
+      "required_evidence": {
+        "ja": "前向き登録t0、実UTC時刻、追記型台帳、計画観測と空白、版/scope継承、独立照合、最終版試験。 判定対象：時期・場面・再訪の範囲を記録。追加証拠：36暦月の未使用確認を含み、適用範囲を検証。",
+        "en": "Prospective registration t0, actual UTC timestamps, append-only ledger, planned observations and gaps, version/scope inheritance, independent checks, and final-version tests. Judgment target: Records the scope of periods, situations, and revisits. Additional evidence: Verifies applicability over thirty-six calendar months, including unused checks."
+      },
+      "weight": 8.333333333333334
+    },
+    {
+      "id": "CEPB_P4",
+      "domain": "P",
+      "name": {
+        "ja": "運用・移行後の連続性",
+        "en": "Continuity after operation and migration"
+      },
+      "anchors": {
+        "low": {
+          "ja": "更新後を過去の版と同じ証拠で認定する",
+          "en": "Certifies a new version using exactly the same evidence as the previous version."
+        },
+        "normal": {
+          "ja": "更新・復旧・媒体の版を区別",
+          "en": "Distinguishes updates, recovery, and media versions."
+        },
+        "advanced": {
+          "ja": "36暦月の経緯と、最終構成の橋渡し・再測定",
+          "en": "Thirty-six calendar months of history and bridging and remeasurement of the final configuration."
+        }
+      },
+      "recipes": [
+        "R20",
+        "R22"
+      ],
+      "required_evidence": {
+        "ja": "前向き登録t0、実UTC時刻、追記型台帳、計画観測と空白、版/scope継承、独立照合、最終版試験。 判定対象：更新・復旧・媒体の版を区別。追加証拠：36暦月の経緯と、最終構成の橋渡し・再測定。",
+        "en": "Prospective registration t0, actual UTC timestamps, append-only ledger, planned observations and gaps, version/scope inheritance, independent checks, and final-version tests. Judgment target: Distinguishes updates, recovery, and media versions. Additional evidence: Thirty-six calendar months of history and bridging and remeasurement of the final configuration."
+      },
+      "weight": 8.333333333333334
+    },
+    {
+      "id": "CEPB_P5",
+      "domain": "P",
+      "name": {
+        "ja": "劣化・故障・回復の経緯",
+        "en": "History of degradation, failure, and recovery"
+      },
+      "anchors": {
+        "low": {
+          "ja": "良い瞬間だけを示し失敗を削除する",
+          "en": "Shows only favorable moments and deletes failures."
+        },
+        "normal": {
+          "ja": "失敗・休止・回復も記録する",
+          "en": "Records failures, suspension, and recovery as well."
+        },
+        "advanced": {
+          "ja": "36暦月の障害・予定復旧試験・未解決事項を独立確認",
+          "en": "Independently checks failures, planned recovery tests, and unresolved issues over thirty-six calendar months."
+        }
+      },
+      "recipes": [
+        "R19",
+        "R22"
+      ],
+      "required_evidence": {
+        "ja": "前向き登録t0、実UTC時刻、追記型台帳、計画観測と空白、版/scope継承、独立照合、最終版試験。 判定対象：失敗・休止・回復も記録する。追加証拠：36暦月の障害・予定復旧試験・未解決事項を独立確認。",
+        "en": "Prospective registration t0, actual UTC timestamps, append-only ledger, planned observations and gaps, version/scope inheritance, independent checks, and final-version tests. Judgment target: Records failures, suspension, and recovery as well. Additional evidence: Independently checks failures, planned recovery tests, and unresolved issues over thirty-six calendar months."
+      },
+      "weight": 8.333333333333334
+    },
+    {
+      "id": "CEPB_P6",
+      "domain": "P",
+      "name": {
+        "ja": "長期結果の再検証",
+        "en": "Independent re-verification of long-term results"
+      },
+      "anchors": {
+        "low": {
+          "ja": "自己採点だけで認証済みとする",
+          "en": "Claims certification from self-rating alone."
+        },
+        "normal": {
+          "ja": "検証資料と不足を第三者へ提示できる",
+          "en": "Can present verification material and deficiencies to a third party."
+        },
+        "advanced": {
+          "ja": "36暦月の記録を独立評定し、最終版の確認用試験を完了",
+          "en": "Independently rates thirty-six calendar months of records and completes confirmation tests on the final version."
+        }
+      },
+      "recipes": [
+        "R22"
+      ],
+      "required_evidence": {
+        "ja": "前向き登録t0、実UTC時刻、追記型台帳、計画観測と空白、版/scope継承、独立照合、最終版試験。 判定対象：検証資料と不足を第三者へ提示できる。追加証拠：36暦月の記録を独立評定し、最終版の確認用試験を完了。",
+        "en": "Prospective registration t0, actual UTC timestamps, append-only ledger, planned observations and gaps, version/scope inheritance, independent checks, and final-version tests. Judgment target: Can present verification material and deficiencies to a third party. Additional evidence: Independently rates thirty-six calendar months of records and completes confirmation tests on the final version."
+      },
+      "weight": 8.333333333333334
+    }
+  ],
+  "anchor_labels": {
+    "low": "0–1 examples",
+    "normal": "3: ordinary establishment",
+    "advanced": "5: additional evidence"
+  },
+  "score_semantics": {
+    "ja": "0〜5は粗い順序評定。平均と配点は便宜的指標で、意識・人格の実在の証明や達成率ではない。",
+    "en": "Scores 0–5 are coarse ordinal ratings. Averages and weights are convenience indices, not proof of consciousness or a real person, and not completion percentages."
+  },
+  "formal_scoring_contract": {
+    "ja": "A〜Nの正式単位は項目ごとの評価束。1束にordinary（通常）2・stress（難条件）2・heldout（未使用）2の6ケース各2反復、合計12観察を入れ、少なくとも2履歴へ事前に割り当てる。全予定スロットが完備した後、12観察を含む束全体を0〜5へ評定する。複数の完全な評価束を計画した場合は、予定された全束を完備して等重みで平均する。SelfReportedの正式0〜4は1評定者でも可。5およびVerifiedは少なくとも2名の独立した人の評定を要し、協議前の値を保持する。件数は固定運用の最小で、統計的妥当性や5を保証しない。O/Pは以下の別手順を使う。",
+    "en": "For A–N, the formal unit is one evaluation bundle per item. One bundle contains six cases (two ordinary, two stress, and two held-out), each repeated twice: twelve observations preassigned across at least two histories. After all planned slots are complete, rate the whole bundle containing all twelve observations on 0–5. If multiple complete evaluation bundles are planned, complete every planned bundle and average them equally. A SelfReported formal rating of 0–4 may use one rater. Grade 5 and Verified require at least two independent human raters, preserving pre-adjudication values. Counts are fixed operational minima, not guarantees of statistical validity or a score of 5. O/P use the separate procedures below."
+  },
+  "quick_local_candidates": {
+    "ordinary_public_cases_per_item": 1,
+    "repetitions": 1,
+    "local_candidate_only": true,
+    "default_local_candidate_cap": 3,
+    "higher_local_candidates_require_level_specific_evidence": true,
+    "maximum_with_additional_local_evidence": 5
+  }
+}

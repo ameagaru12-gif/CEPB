@@ -1,0 +1,55 @@
+{
+  "kind": "human_presence",
+  "bundle_id": "fictional_O1_bundle",
+  "score": 0,
+  "rubric_id": "CEPB-O-0.1",
+  "direction": "positive",
+  "human_participants_declared": true,
+  "planned_participant_ids": [
+    "fictional_person_01",
+    "fictional_person_02",
+    "fictional_person_03",
+    "fictional_person_04",
+    "fictional_person_05",
+    "fictional_person_06",
+    "fictional_person_07",
+    "fictional_person_08",
+    "fictional_person_09",
+    "fictional_person_10",
+    "fictional_person_11",
+    "fictional_person_12"
+  ],
+  "planned_conditions": [
+    {
+      "condition_id": "ordinary",
+      "stratum": "ordinary"
+    },
+    {
+      "condition_id": "stress",
+      "stratum": "stress"
+    },
+    {
+      "condition_id": "heldout",
+      "stratum": "heldout"
+    }
+  ],
+  "raw_ratings": [],
+  "calibration_ref": "evidence/synthetic.md",
+  "presentation_order_ref": "evidence/synthetic.md",
+  "rater_scores": [
+    {
+      "rater_id": "fictional_rater_1",
+      "score": 0
+    },
+    {
+      "rater_id": "fictional_rater_2",
+      "score": 0
+    }
+  ],
+  "independent_check_ref": "evidence/synthetic.md",
+  "heldout_secrecy": {
+    "declared": true,
+    "evidence_ref": "evidence/synthetic.md"
+  },
+  "description": "FICTIONAL STRUCTURE EXAMPLE. Replace all IDs, observations, evidence and scores; do not claim these as real observations."
+}

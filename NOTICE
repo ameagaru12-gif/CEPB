@@ -1,0 +1,20 @@
+CEPB 1.0.0 / CEPB-SUITE-1.0.0
+
+Original code, documentation, bilingual item definitions, and synthetic case
+cards in this directory are distributed under the MIT license in LICENSE.
+MIT license reference: https://opensource.org/license/mit
+
+CEPB is a standalone adaptation of an earlier character-AI evaluation design.
+Private character systems, real dialogue, user ratings, models, media assets,
+research papers, and third-party questionnaires are not bundled or relicensed.
+References are links and paraphrased descriptions, not copied test instruments.
+No affiliation with or endorsement by the cited authors is claimed.
+
+The toolkit performs offline validation and arithmetic on submitted ratings.
+It does not establish consciousness, validate scientific measurement, verify
+an evaluator's identity, or issue independent certification.
+
+このフォルダの独自コード・文書・日英の項目・合成ケースはMITライセンスです。
+私的なキャラクターシステム・実対話・利用者評定・モデル・媒体素材・論文・
+第三者の質問票は同梱せず、再ライセンスしていません。
+ツールは提出値の検査と集計を行い、意識の認定や第三者認証は行いません。

@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:cepb:report:1.0.0",
+  "title": "CEPB aggregation report",
+  "type": "object",
+  "required": [
+    "report_version",
+    "framework",
+    "track",
+    "aggregation_only",
+    "certification_issued",
+    "complete",
+    "coverage",
+    "official_score",
+    "bounds",
+    "items",
+    "issues",
+    "item_coverage",
+    "weighted_coverage",
+    "required_gates",
+    "missing_gates"
+  ],
+  "properties": {
+    "report_version": {
+      "const": "CEPB-REPORT-1.0.0"
+    },
+    "framework": {
+      "const": "CEPB-1.0.0"
+    },
+    "aggregation_only": {
+      "const": true
+    },
+    "certification_issued": {
+      "const": false
+    },
+    "coverage": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Compatibility alias of item_coverage, not weighted coverage."
+    },
+    "official_score": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "items": {
+      "type": "array"
+    },
+    "issues": {
+      "type": "array"
+    },
+    "bounds": {
+      "type": "object",
+      "required": [
+        "lower",
+        "upper",
+        "fixed_denominator"
+      ]
+    },
+    "item_coverage": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "weighted_coverage": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Sum of known item weights / fixed track points. Quick is null."
+    },
+    "required_gates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "missing_gates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  }
+}

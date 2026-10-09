@@ -1,0 +1,393 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:cepb:run:1.0.0",
+  "title": "CEPB declared-evidence run",
+  "type": "object",
+  "required": [
+    "campaign_id",
+    "framework",
+    "suite_version",
+    "track",
+    "as_of",
+    "character",
+    "system",
+    "protocol",
+    "lineage",
+    "verification",
+    "gates",
+    "items"
+  ],
+  "properties": {
+    "campaign_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "framework": {
+      "const": "CEPB-1.0.0"
+    },
+    "suite_version": {
+      "const": "CEPB-SUITE-1.0.0"
+    },
+    "track": {
+      "enum": [
+        "Quick",
+        "Core",
+        "Voice",
+        "Avatar",
+        "Multimodal",
+        "World",
+        "Integrated"
+      ]
+    },
+    "as_of": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "(Z|\\+00:00)$"
+    },
+    "character": {
+      "type": "object",
+      "required": [
+        "mode",
+        "id",
+        "definition_ref"
+      ],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "minLength": 1
+        },
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "definition_ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Existing local file relative to run.json, or HTTPS URL (not fetched)."
+        }
+      }
+    },
+    "system": {
+      "type": "object",
+      "required": [
+        "version",
+        "manifest_ref"
+      ],
+      "properties": {
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "manifest_ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Existing local file relative to run.json, or HTTPS URL (not fetched)."
+        }
+      }
+    },
+    "protocol": {
+      "type": "object",
+      "required": [
+        "registered_at",
+        "frozen_before_execution"
+      ],
+      "properties": {
+        "registered_at": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "(Z|\\+00:00)$"
+        },
+        "frozen_before_execution": {
+          "type": "boolean"
+        }
+      }
+    },
+    "lineage": {
+      "type": "object",
+      "required": [
+        "kind",
+        "rule_publication_at",
+        "registered_at",
+        "first_independent_observation_at",
+        "scope_clocks"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "FIXED_RELEASE",
+            "MAINTAINED_LINEAGE"
+          ]
+        },
+        "rule_publication_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "(Z|\\+00:00)$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "registered_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "(Z|\\+00:00)$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "first_independent_observation_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "(Z|\\+00:00)$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "scope_clocks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "scope_id",
+              "implemented_at",
+              "registered_at",
+              "first_independent_observation_at"
+            ],
+            "properties": {
+              "scope_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "implemented_at": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "date-time",
+                    "pattern": "(Z|\\+00:00)$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "registered_at": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "date-time",
+                    "pattern": "(Z|\\+00:00)$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "first_independent_observation_at": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "date-time",
+                    "pattern": "(Z|\\+00:00)$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "required": [
+        "level",
+        "reviewer_ids",
+        "disclosure_ref",
+        "report_ref"
+      ],
+      "properties": {
+        "level": {
+          "enum": [
+            "self_reported",
+            "independently_reviewed"
+          ]
+        },
+        "reviewer_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "disclosure_ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Existing local file relative to run.json, or HTTPS URL (not fetched)."
+        },
+        "report_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "description": "Existing local file relative to run.json, or HTTPS URL (not fetched)."
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "level": {
+                "const": "independently_reviewed"
+              }
+            },
+            "required": [
+              "level"
+            ]
+          },
+          "then": {
+            "properties": {
+              "reviewer_ids": {
+                "minItems": 2
+              },
+              "report_ref": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "gates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "status",
+          "evidence_refs"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "clear",
+              "unresolved",
+              "not_assessed"
+            ]
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Existing local file relative to run.json, or HTTPS URL (not fetched)."
+            }
+          }
+        }
+      }
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "status",
+          "score",
+          "reason",
+          "evidence_refs"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^CEPB_[A-P][1-6]$"
+          },
+          "status": {
+            "enum": [
+              "scored",
+              "unsupported",
+              "unobserved",
+              "log_missing",
+              "system_failed",
+              "disputed",
+              "not_applicable",
+              "plan_error",
+              "protocol_error"
+            ]
+          },
+          "score": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 5
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "provisional_score": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 5
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Existing local file relative to run.json, or HTTPS URL (not fetched)."
+            }
+          },
+          "bundles": {
+            "type": "array",
+            "items": {
+              "$ref": "bundles.schema.json"
+            }
+          }
+        }
+      }
+    },
+    "synthetic_example": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

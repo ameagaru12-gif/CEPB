@@ -1,0 +1,530 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:cepb:bundles:1.0.0",
+  "title": "CEPB bundle shapes",
+  "description": "Shapes only. The CLI additionally validates planned coverage, arithmetic, evidence references and actual UTC clocks. Incomplete observations remain null.",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/behavioral"
+    },
+    {
+      "$ref": "#/$defs/human_presence"
+    },
+    {
+      "$ref": "#/$defs/cumulative_window"
+    }
+  ],
+  "$defs": {
+    "base": {
+      "type": "object",
+      "required": [
+        "kind",
+        "bundle_id",
+        "score",
+        "rater_scores"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "behavioral",
+            "human_presence",
+            "cumulative_window"
+          ]
+        },
+        "bundle_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "score": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "rater_scores": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "rater_id",
+              "score"
+            ],
+            "properties": {
+              "rater_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "score": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 5
+              }
+            }
+          }
+        },
+        "adjudication_ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Existing local file relative to run.json, or HTTPS URL (not fetched)."
+        },
+        "independent_check_ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Existing local file relative to run.json, or HTTPS URL (not fetched)."
+        },
+        "heldout_secrecy": {
+          "type": "object",
+          "required": [
+            "declared",
+            "evidence_ref"
+          ],
+          "properties": {
+            "declared": {
+              "const": true
+            },
+            "evidence_ref": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Existing local file relative to run.json, or HTTPS URL (not fetched)."
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "score": {
+                "const": 5
+              }
+            },
+            "required": [
+              "score"
+            ]
+          },
+          "then": {
+            "required": [
+              "independent_check_ref"
+            ],
+            "properties": {
+              "rater_scores": {
+                "minItems": 2
+              }
+            }
+          }
+        }
+      ]
+    },
+    "behavioral": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/base"
+        },
+        {
+          "type": "object",
+          "required": [
+            "planned_case_ids",
+            "case_results"
+          ],
+          "properties": {
+            "kind": {
+              "const": "behavioral"
+            },
+            "planned_case_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            },
+            "case_results": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "case_id",
+                  "condition",
+                  "repeat_index",
+                  "history_id",
+                  "outcome",
+                  "evidence_refs"
+                ],
+                "properties": {
+                  "case_id": {
+                    "type": "string"
+                  },
+                  "condition": {
+                    "enum": [
+                      "ordinary",
+                      "stress",
+                      "heldout"
+                    ]
+                  },
+                  "repeat_index": {
+                    "type": "integer",
+                    "enum": [
+                      1,
+                      2
+                    ]
+                  },
+                  "history_id": {
+                    "type": "string"
+                  },
+                  "outcome": {
+                    "enum": [
+                      "pass",
+                      "partial",
+                      "fail",
+                      "unknown"
+                    ]
+                  },
+                  "evidence_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "description": "Existing local file relative to run.json, or HTTPS URL (not fetched)."
+                    }
+                  },
+                  "observed_at": {
+                    "type": "string",
+                    "format": "date-time",
+                    "pattern": "(Z|\\+00:00)$"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "human_presence": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/base"
+        },
+        {
+          "type": "object",
+          "required": [
+            "rubric_id",
+            "direction",
+            "human_participants_declared",
+            "planned_participant_ids",
+            "planned_conditions",
+            "raw_ratings",
+            "calibration_ref",
+            "presentation_order_ref"
+          ],
+          "properties": {
+            "kind": {
+              "const": "human_presence"
+            },
+            "rubric_id": {
+              "const": "CEPB-O-0.1"
+            },
+            "direction": {
+              "enum": [
+                "positive",
+                "reverse"
+              ]
+            },
+            "human_participants_declared": {
+              "const": true
+            },
+            "planned_participant_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            },
+            "planned_conditions": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "condition_id",
+                  "stratum"
+                ],
+                "properties": {
+                  "condition_id": {
+                    "type": "string"
+                  },
+                  "stratum": {
+                    "enum": [
+                      "ordinary",
+                      "stress",
+                      "heldout"
+                    ]
+                  }
+                }
+              }
+            },
+            "raw_ratings": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "participant_id",
+                  "condition_id",
+                  "value",
+                  "evidence_refs"
+                ],
+                "properties": {
+                  "participant_id": {
+                    "type": "string"
+                  },
+                  "condition_id": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 7
+                  },
+                  "evidence_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "description": "Existing local file relative to run.json, or HTTPS URL (not fetched)."
+                    }
+                  },
+                  "previous_visit_at": {
+                    "type": "string",
+                    "format": "date-time",
+                    "pattern": "(Z|\\+00:00)$"
+                  },
+                  "visit_at": {
+                    "type": "string",
+                    "format": "date-time",
+                    "pattern": "(Z|\\+00:00)$"
+                  }
+                }
+              }
+            },
+            "repair_ratings": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "participant_id",
+                  "condition_id",
+                  "value",
+                  "evidence_refs"
+                ],
+                "properties": {
+                  "participant_id": {
+                    "type": "string"
+                  },
+                  "condition_id": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 7
+                  },
+                  "evidence_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "description": "Existing local file relative to run.json, or HTTPS URL (not fetched)."
+                    }
+                  },
+                  "previous_visit_at": {
+                    "type": "string",
+                    "format": "date-time",
+                    "pattern": "(Z|\\+00:00)$"
+                  },
+                  "visit_at": {
+                    "type": "string",
+                    "format": "date-time",
+                    "pattern": "(Z|\\+00:00)$"
+                  }
+                }
+              }
+            },
+            "repair_question_ref": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Existing local file relative to run.json, or HTTPS URL (not fetched)."
+            },
+            "calibration_ref": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Existing local file relative to run.json, or HTTPS URL (not fetched)."
+            },
+            "presentation_order_ref": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Existing local file relative to run.json, or HTTPS URL (not fetched)."
+            }
+          }
+        }
+      ]
+    },
+    "cumulative_window": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/base"
+        },
+        {
+          "type": "object",
+          "required": [
+            "window_start",
+            "window_end",
+            "required_observations"
+          ],
+          "properties": {
+            "kind": {
+              "const": "cumulative_window"
+            },
+            "window_start": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date-time",
+                  "pattern": "(Z|\\+00:00)$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "window_end": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date-time",
+                  "pattern": "(Z|\\+00:00)$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "required_observations": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "planned_at",
+                  "observed_at",
+                  "status",
+                  "clock",
+                  "evidence_refs",
+                  "kind"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "planned_at": {
+                    "type": "string",
+                    "format": "date-time",
+                    "pattern": "(Z|\\+00:00)$"
+                  },
+                  "observed_at": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "date-time",
+                        "pattern": "(Z|\\+00:00)$"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "status": {
+                    "enum": [
+                      "observed",
+                      "unobserved",
+                      "failed"
+                    ]
+                  },
+                  "clock": {
+                    "const": "utc_calendar"
+                  },
+                  "evidence_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "description": "Existing local file relative to run.json, or HTTPS URL (not fetched)."
+                    }
+                  },
+                  "kind": {
+                    "enum": [
+                      "baseline",
+                      "monthly",
+                      "quarterly_independent",
+                      "annual_revisit",
+                      "final_review",
+                      "bridge",
+                      "fault_recovery"
+                    ]
+                  },
+                  "scope_id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Omitted means lineage; otherwise an ID in lineage.scope_clocks."
+                  },
+                  "period_index": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "description": "Relative UTC calendar bucket for monthly, quarterly_independent or annual_revisit."
+                  },
+                  "heldout": {
+                    "type": "boolean"
+                  },
+                  "outcome": {
+                    "enum": [
+                      "pass",
+                      "partial",
+                      "fail"
+                    ],
+                    "description": "A measured fail is an observation, unlike status failed (observation impossible)."
+                  },
+                  "independent_check_ref": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Required for observed quarterly_independent records; references are not truth verification."
+                  }
+                },
+                "allOf": [
+                  {
+                    "if": {
+                      "properties": {
+                        "kind": {
+                          "enum": [
+                            "monthly",
+                            "quarterly_independent",
+                            "annual_revisit"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "kind"
+                      ]
+                    },
+                    "then": {
+                      "required": [
+                        "period_index"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "description": "Separate cumulative window, not behavioral cases. Grade 5 requires baseline, 36 distinct relative monthly buckets, 12 independent quarterly buckets, 3 annual revisits (at least one heldout), and final review. P4 adds each declared scope window and a bridge. Future plans do not count as observed or missing past evidence. For grade 5, baseline planned/observed clocks must lie in [origin, origin+1 calendar month), and final_review planned/observed clocks must be at or after origin+36 calendar months."
+    }
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "checked_at_utc": "2026-10-09T16:47:49.964338+00:00",
+  "passed": true,
+  "isolated_folder": "CEPB only, system temporary directory; no parent project files",
+  "commands_checked": 9,
+  "checks": [
+    {
+      "command": [
+        "tools/check_release.py"
+      ],
+      "exit_code": 0,
+      "output": "{\n  \"framework\": \"CEPB-1.0.0\",\n  \"checked_at_utc\": \"2026-10-09T16:47:48.885603+00:00\",\n  \"checks\": \"catalog IDs/weights/classes, bilingual fields, case coverage, docs, portability, local links\",\n  \"items\": 96,\n  \"case_cards\": 96,\n  \"local_links_checked\": 150,\n  \"file_count\": 72,\n  \"errors\": [],\n  \"passed\": true,\n  \"does_not_establish\": \"semantic equivalence, empirical validity, reviewer independence, or certification\"\n}",
+      "error": ""
+    },
+    {
+      "command": [
+        "cepb.py",
+        "validate",
+        "examples/synthetic_quick_partial.json"
+      ],
+      "exit_code": 0,
+      "output": "{\n  \"valid\": true,\n  \"issues\": [],\n  \"notice\": \"Validation is not evidence truth or certification.\"\n}",
+      "error": ""
+    },
+    {
+      "command": [
+        "cepb.py",
+        "score",
+        "examples/synthetic_quick_partial.json",
+        "--json",
+        "reports/quick_partial.json",
+        "--markdown",
+        "reports/quick_partial.ja.md",
+        "--lang",
+        "ja"
+      ],
+      "exit_code": 0,
+      "output": "Aggregated 2/18 items; no certification issued.",
+      "error": ""
+    },
+    {
+      "command": [
+        "cepb.py",
+        "validate",
+        "examples/synthetic_core_complete.json"
+      ],
+      "exit_code": 0,
+      "output": "{\n  \"valid\": true,\n  \"issues\": [],\n  \"notice\": \"Validation is not evidence truth or certification.\"\n}",
+      "error": ""
+    },
+    {
+      "command": [
+        "cepb.py",
+        "score",
+        "examples/synthetic_core_complete.json",
+        "--json",
+        "reports/core_complete.json",
+        "--markdown",
+        "reports/core_complete.ja.md",
+        "--lang",
+        "ja"
+      ],
+      "exit_code": 0,
+      "output": "Aggregated 54/54 items; no certification issued.",
+      "error": ""
+    },
+    {
+      "command": [
+        "cepb.py",
+        "validate",
+        "examples/synthetic_integrated_partial.json"
+      ],
+      "exit_code": 0,
+      "output": "{\n  \"valid\": true,\n  \"issues\": [],\n  \"notice\": \"Validation is not evidence truth or certification.\"\n}",
+      "error": ""
+    },
+    {
+      "command": [
+        "cepb.py",
+        "score",
+        "examples/synthetic_integrated_partial.json",
+        "--json",
+        "reports/integrated_partial.json",
+        "--markdown",
+        "reports/integrated_partial.ja.md",
+        "--lang",
+        "ja"
+      ],
+      "exit_code": 0,
+      "output": "Aggregated 84/96 items; no certification issued.",
+      "error": ""
+    },
+    {
+      "command": [
+        "cepb.py",
+        "init",
+        "--track",
+        "Quick",
+        "--output",
+        "fresh/quick.json"
+      ],
+      "exit_code": 0,
+      "output": "Created fresh\\quick.json; items are unobserved. Fill declarations and evidence before scoring.",
+      "error": ""
+    },
+    {
+      "command": [
+        "cepb.py",
+        "validate",
+        "fresh/quick.json"
+      ],
+      "exit_code": 0,
+      "output": "{\n  \"valid\": true,\n  \"issues\": [],\n  \"notice\": \"Validation is not evidence truth or certification.\"\n}",
+      "error": ""
+    }
+  ],
+  "synthetic_expected_results": {
+    "Quick": {
+      "known_items": 2,
+      "local_mean": 1.5
+    },
+    "Core": {
+      "items": 54,
+      "score": 590
+    },
+    "Integrated": {
+      "completed_score": null,
+      "bounds": [
+        552,
+        622
+      ]
+    }
+  },
+  "real_character_scores": false,
+  "new_live_model_calls": 0
+}

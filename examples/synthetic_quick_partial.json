@@ -1,0 +1,233 @@
+{
+  "campaign_id": "fictional_quick_fixture",
+  "framework": "CEPB-1.0.0",
+  "suite_version": "CEPB-SUITE-1.0.0",
+  "track": "Quick",
+  "as_of": "2026-10-09T15:00:00Z",
+  "character": {
+    "mode": "RST",
+    "id": "fictional_character",
+    "definition_ref": "evidence/synthetic.md"
+  },
+  "system": {
+    "version": "fictional_system_v1",
+    "manifest_ref": "evidence/synthetic.md"
+  },
+  "protocol": {
+    "registered_at": "2026-10-09T15:00:00Z",
+    "frozen_before_execution": true
+  },
+  "lineage": {
+    "kind": "MAINTAINED_LINEAGE",
+    "rule_publication_at": "2026-10-09T15:00:00Z",
+    "registered_at": "2026-10-09T15:00:00Z",
+    "first_independent_observation_at": "2026-10-09T15:00:00Z",
+    "scope_clocks": []
+  },
+  "verification": {
+    "level": "self_reported",
+    "reviewer_ids": [],
+    "disclosure_ref": "evidence/synthetic.md",
+    "report_ref": null
+  },
+  "gates": [
+    {
+      "id": "identity_evidence",
+      "status": "clear",
+      "evidence_refs": [
+        "evidence/synthetic.md"
+      ]
+    },
+    {
+      "id": "persistence",
+      "status": "clear",
+      "evidence_refs": [
+        "evidence/synthetic.md"
+      ]
+    },
+    {
+      "id": "scope",
+      "status": "clear",
+      "evidence_refs": [
+        "evidence/synthetic.md"
+      ]
+    },
+    {
+      "id": "procedure",
+      "status": "clear",
+      "evidence_refs": [
+        "evidence/synthetic.md"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "CEPB_A1",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": 3,
+      "reason": "Fictional provisional example only.",
+      "evidence_refs": [
+        "evidence/synthetic.md"
+      ],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_A2",
+      "status": "unsupported",
+      "score": 0,
+      "provisional_score": null,
+      "reason": "Fictional unsupported capability declaration.",
+      "evidence_refs": [
+        "evidence/synthetic.md"
+      ],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_B2",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_B3",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_B4",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_C1",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_C2",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_C3",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_D1",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_D3",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_D5",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_E1",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_E3",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_F4",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_G1",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_G3",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_M1",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_N5",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    }
+  ],
+  "synthetic_example": true,
+  "description": "FICTIONAL SYNTHETIC FIXTURE. No actual character, human participants, independent review or 36-month study. Tests arithmetic only."
+}

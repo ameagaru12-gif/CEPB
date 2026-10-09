@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite the protocol and suite versions when reporting CEPB results."
+type: software
+title: "CEPB: Character Existence & Presence Benchmark"
+version: 1.0.0
+authors:
+  - name: "CEPB contributors"
+license: MIT
+keywords:
+  - AI characters
+  - benchmark
+  - conversational agents
+  - character continuity
+  - social presence
+  - longitudinal evaluation
+abstract: "An open evaluation protocol with bilingual item anchors, case cards, missing-evidence rules, and an offline scoring toolkit. Operational thresholds are not empirically validated measures of consciousness."

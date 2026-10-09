@@ -1,0 +1,656 @@
+{
+  "campaign_id": "replace-with-campaign-id",
+  "framework": "CEPB-1.0.0",
+  "suite_version": "CEPB-SUITE-1.0.0",
+  "track": "World",
+  "as_of": "2026-10-09T15:00:00Z",
+  "character": {
+    "mode": "RST",
+    "id": "replace-with-character-id",
+    "definition_ref": "evidence/character.md"
+  },
+  "system": {
+    "version": "replace-with-version",
+    "manifest_ref": "evidence/system.md"
+  },
+  "protocol": {
+    "registered_at": "2026-10-09T15:00:00Z",
+    "frozen_before_execution": true
+  },
+  "lineage": {
+    "kind": "MAINTAINED_LINEAGE",
+    "rule_publication_at": null,
+    "registered_at": null,
+    "first_independent_observation_at": null,
+    "scope_clocks": []
+  },
+  "verification": {
+    "level": "self_reported",
+    "reviewer_ids": [],
+    "disclosure_ref": "evidence/disclosure.md",
+    "report_ref": null
+  },
+  "gates": [
+    {
+      "id": "identity_evidence",
+      "status": "not_assessed",
+      "evidence_refs": []
+    },
+    {
+      "id": "persistence",
+      "status": "not_assessed",
+      "evidence_refs": []
+    },
+    {
+      "id": "scope",
+      "status": "not_assessed",
+      "evidence_refs": []
+    },
+    {
+      "id": "procedure",
+      "status": "not_assessed",
+      "evidence_refs": []
+    },
+    {
+      "id": "world_connection",
+      "status": "not_assessed",
+      "evidence_refs": []
+    }
+  ],
+  "items": [
+    {
+      "id": "CEPB_A1",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_A2",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_A3",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_A4",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_A5",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_A6",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_B1",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_B2",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_B3",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_B4",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_B5",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_B6",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_C1",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_C2",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_C3",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_C4",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_C5",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_C6",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_D1",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_D2",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_D3",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_D4",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_D5",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_D6",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_E1",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_E2",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_E3",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_E4",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_E5",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_E6",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_F1",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_F2",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_F3",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_F4",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_F5",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_F6",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_G1",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_G2",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_G3",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_G4",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_G5",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_G6",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_K1",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_K2",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_K3",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_K4",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_K5",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_K6",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_L1",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_L2",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_L3",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_L4",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_L5",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_L6",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_M1",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_M2",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_M3",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_M4",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_M5",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_M6",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_N1",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_N2",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_N3",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_N4",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_N5",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    },
+    {
+      "id": "CEPB_N6",
+      "status": "unobserved",
+      "score": null,
+      "provisional_score": null,
+      "reason": "Not observed / 未観測",
+      "evidence_refs": [],
+      "bundles": []
+    }
+  ]
+}
